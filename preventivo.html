@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Richiedi un preventivo — Arpal Srl</title>
+<meta name="description" content="Richiedi un preventivo ad Arpal Srl per coperture, impermeabilizzazioni, facciate, rivestimenti metallici, linea vita e laghi artificiali. Compila il form guidato in pochi passaggi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/preventivo.css">
+</head>
+<body class="quote">
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header class="site-header is-scrolled">
+  <div class="container">
+    <a class="logo" href="index.html">ARPAL <span>dal 1979</span></a>
+    <nav class="nav-desktop" aria-label="Navigazione principale">
+      <a href="index.html">Home</a>
+      <a href="index.html#storia">Storia</a>
+      <a href="index.html#servizi">Servizi</a>
+      <a href="index.html#assistenza">Assistenza</a>
+      <a href="index.html#materiali">Materiali</a>
+      <a href="index.html#contatti">Contatti</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-ghost nav-cta" href="tel:+3901118738210">011 1873 8210</a>
+      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigazione mobile">
+  <a href="index.html">Home</a>
+  <a href="index.html#storia">Storia</a>
+  <a href="index.html#servizi">Servizi</a>
+  <a href="index.html#assistenza">Assistenza</a>
+  <a href="index.html#materiali">Materiali</a>
+  <a href="index.html#contatti">Contatti</a>
+  <div class="mobile-nav-foot">
+    <span>info@arpal-srl.it</span>
+    <span>011 1873 8210</span>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="page-hero-media"><img src="assets/img/impermeabilizzazioni/copertura-pendente-1.jpg" alt="Copertura pendente impermeabilizzata da Arpal"></div>
+    <div class="container">
+      <span class="hero-kicker">Richiedi un preventivo</span>
+      <h1>Raccontaci il tuo progetto in pochi passaggi</h1>
+      <p>Rispondi ad alcune domande guidate: ci aiuteranno a capire di cosa hai bisogno e a risponderti con informazioni più precise.</p>
+    </div>
+  </section>
+
+  <section class="quote-wrap">
+    <div class="container">
+      <div class="quote-shell">
+
+        <div class="quote-progress" data-progress>
+          <div class="bar is-current"><i></i></div>
+          <div class="bar"><i></i></div>
+          <div class="bar"><i></i></div>
+          <div class="bar"><i></i></div>
+          <div class="bar"><i></i></div>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="quote-meta"><span>Passaggio <strong data-step-current>1</strong> di 6</span><span data-step-label>Tipo di intervento</span></div>
+
+        <form id="quoteForm" name="richiesta-preventivo" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="richiesta-preventivo">
+          <p hidden><label>Non compilare: <input name="bot-field"></label></p>
+
+          <!-- STEP 1 -->
+          <div class="quote-step is-active" data-step="1">
+            <h2>Che tipo di intervento ti serve?</h2>
+            <p class="step-hint">Seleziona una o più opzioni.</p>
+            <div class="option-grid" data-required>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Facciate"><span class="tick"></span><span class="label">Facciate</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Coperture"><span class="tick"></span><span class="label">Coperture</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Rivestimenti metallici"><span class="tick"></span><span class="label">Rivestimenti metallici</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Linea vita"><span class="tick"></span><span class="label">Linea vita</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Impermeabilizzazioni"><span class="tick"></span><span class="label">Impermeabilizzazioni</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Laghi artificiali"><span class="tick"></span><span class="label">Laghi artificiali</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Assistenza post-vendita"><span class="tick"></span><span class="label">Assistenza post-vendita</span></label>
+              <label class="option-card"><input type="checkbox" name="intervento" value="Non so ancora"><span class="tick"></span><span class="label">Non so ancora<span class="sub">Valutiamolo insieme</span></span></label>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="quote-step" data-step="2">
+            <h2>Che tipo di edificio o struttura è coinvolta?</h2>
+            <p class="step-hint">Seleziona un'opzione.</p>
+            <div class="option-grid" data-required>
+              <label class="option-card"><input type="radio" name="edificio" value="Residenziale" required><span class="tick"></span><span class="label">Residenziale</span></label>
+              <label class="option-card"><input type="radio" name="edificio" value="Industriale / Commerciale"><span class="tick"></span><span class="label">Industriale / Commerciale</span></label>
+              <label class="option-card"><input type="radio" name="edificio" value="Struttura ricettiva"><span class="tick"></span><span class="label">Struttura ricettiva</span></label>
+              <label class="option-card"><input type="radio" name="edificio" value="Altro"><span class="tick"></span><span class="label">Altro</span></label>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="quote-step" data-step="3">
+            <h2>Si tratta di una nuova costruzione o di una ristrutturazione?</h2>
+            <p class="step-hint">Seleziona un'opzione.</p>
+            <div class="option-grid" data-required>
+              <label class="option-card"><input type="radio" name="natura_intervento" value="Nuova costruzione" required><span class="tick"></span><span class="label">Nuova costruzione</span></label>
+              <label class="option-card"><input type="radio" name="natura_intervento" value="Ristrutturazione / riqualificazione"><span class="tick"></span><span class="label">Ristrutturazione / riqualificazione</span></label>
+              <label class="option-card"><input type="radio" name="natura_intervento" value="Manutenzione"><span class="tick"></span><span class="label">Manutenzione</span></label>
+              <label class="option-card"><input type="radio" name="natura_intervento" value="Non so ancora"><span class="tick"></span><span class="label">Non so ancora</span></label>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="quote-step" data-step="4">
+            <h2>Con quali tempistiche vorresti realizzare l'intervento?</h2>
+            <p class="step-hint">Seleziona un'opzione.</p>
+            <div class="option-grid option-grid--single" data-required>
+              <label class="option-card"><input type="radio" name="tempistica" value="Urgente, entro poche settimane" required><span class="tick"></span><span class="label">Urgente<span class="sub">Entro poche settimane</span></span></label>
+              <label class="option-card"><input type="radio" name="tempistica" value="Entro 3 mesi"><span class="tick"></span><span class="label">Entro 3 mesi</span></label>
+              <label class="option-card"><input type="radio" name="tempistica" value="Nei prossimi mesi, senza fretta"><span class="tick"></span><span class="label">Nei prossimi mesi<span class="sub">Senza fretta particolare</span></span></label>
+              <label class="option-card"><input type="radio" name="tempistica" value="Sto raccogliendo informazioni"><span class="tick"></span><span class="label">Sto raccogliendo informazioni</span></label>
+            </div>
+          </div>
+
+          <!-- STEP 5 -->
+          <div class="quote-step" data-step="5">
+            <h2>Come possiamo ricontattarti?</h2>
+            <p class="step-hint">I tuoi dati verranno usati solo per rispondere alla richiesta.</p>
+            <div class="field-row">
+              <div class="field"><label for="q-nome">Nome e cognome *</label><input id="q-nome" type="text" name="nome" required></div>
+              <div class="field"><label for="q-azienda">Azienda / Ragione sociale</label><input id="q-azienda" type="text" name="azienda"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="q-email">E-mail *</label><input id="q-email" type="email" name="email" required></div>
+              <div class="field"><label for="q-telefono">Telefono *</label><input id="q-telefono" type="tel" name="telefono" required></div>
+            </div>
+            <div class="field"><label for="q-comune">Comune / provincia dell'intervento</label><input id="q-comune" type="text" name="comune" placeholder="Es. Montà (CN)"></div>
+            <div class="field"><label for="q-note">Note aggiuntive</label><textarea id="q-note" name="note" placeholder="Descrivi brevemente l'intervento, superfici indicative, eventuali documenti disponibili…"></textarea></div>
+            <div class="field-check">
+              <input id="q-privacy" type="checkbox" name="privacy" value="accettato" required>
+              <label for="q-privacy">Ho letto l'informativa sulla privacy e acconsento al trattamento dei miei dati per essere ricontattato/a da Arpal Srl. *</label>
+            </div>
+          </div>
+
+          <!-- STEP 6 -->
+          <div class="quote-step" data-step="6">
+            <h2>Riepilogo della richiesta</h2>
+            <p class="step-hint">Verifica i dati inseriti e invia la richiesta: ti risponderemo al più presto.</p>
+            <div class="summary-list" data-summary></div>
+          </div>
+
+          <!-- SUCCESS -->
+          <div class="quote-step" data-step="success">
+            <div class="quote-success">
+              <div class="ico">✓</div>
+              <h2>Richiesta inviata</h2>
+              <p>Grazie! Abbiamo ricevuto la tua richiesta di preventivo: il nostro team la esaminerà e ti ricontatterà il prima possibile.</p>
+              <a class="btn btn-dark" href="index.html" style="margin-top:1.6rem;">Torna alla home</a>
+            </div>
+          </div>
+
+          <div class="quote-nav" data-quote-nav>
+            <button type="button" class="btn-back" data-step-back hidden>&larr; Indietro</button>
+            <button type="button" class="btn btn-dark" data-step-next>Continua <span class="btn-arrow">&rarr;</span></button>
+            <button type="submit" class="btn btn-primary" data-step-submit hidden>Invia richiesta <span class="btn-arrow">&rarr;</span></button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">ARPAL</a>
+        <p>Coperture, impermeabilizzazioni e rivestimenti metallici dal 1979. Un'impresa familiare, oggi alla sua seconda generazione.</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#storia">Storia</a></li>
+          <li><a href="index.html#servizi">Servizi</a></li>
+          <li><a href="index.html#assistenza">Assistenza</a></li>
+          <li><a href="index.html#materiali">Materiali</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Servizi</h4>
+        <ul>
+          <li><a href="facciate.html">Facciate</a></li>
+          <li><a href="coperture.html">Coperture</a></li>
+          <li><a href="rivestimenti-metallici.html">Rivestimenti metallici</a></li>
+          <li><a href="linea-vita.html">Linea vita</a></li>
+          <li><a href="impermeabilizzazioni.html">Impermeabilizzazioni</a></li>
+          <li><a href="laghi-artificiali.html">Laghi artificiali</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:info@arpal-srl.it">info@arpal-srl.it</a></li>
+          <li><a href="tel:+3901118738210">011 1873 8210</a></li>
+          <li><a href="https://instagram.com/arpal__" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/Arpal" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Arpal Srl — Sede legale Montà (CN) · Stabilimento Poirino (TO)</span>
+      <span>Bozza di progetto</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/preventivo.js"></script>
+</body>
+</html>
