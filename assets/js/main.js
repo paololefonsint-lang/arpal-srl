@@ -9,7 +9,7 @@
 
   /* ---------------------------------------------------- Lenis + GSAP ---- */
   let lenis = null;
-  if(window.gsap){ gsap.registerPlugin(ScrollTrigger); }
+  if(window.gsap && window.ScrollTrigger){ gsap.registerPlugin(ScrollTrigger); }
 
   if(!reduceMotion && window.Lenis){
     lenis = new Lenis({
@@ -225,7 +225,7 @@
   }
 
   /* ---------------------------------------------------- GSAP animations - */
-  if(window.gsap && !reduceMotion){
+  if(window.gsap && window.ScrollTrigger && !reduceMotion){
 
     gsap.utils.toArray(".reveal, .reveal-fast").forEach(el=>{
       gsap.to(el, {
