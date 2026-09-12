@@ -29,7 +29,7 @@
 *,*::before,*::after{box-sizing:border-box;}
 html{
   scroll-behavior:auto;
-  overflow-x:hidden;
+  overflow-x:clip;
   overscroll-behavior-x:none;
   width:100%;
 }
@@ -43,7 +43,7 @@ body{
   font-size:16px;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+  overflow-x:clip;
   overscroll-behavior-x:none;
 }
 img,video{max-width:100%;display:block;}
@@ -448,24 +448,6 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 @media(max-width:900px){
   .storia-grid{display:block;}
   .storia-sticky{position:static;top:auto;}
-}
-.storia-photos{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:12px;
-  max-width:600px;
-  margin-bottom:3rem;
-}
-.storia-photos figure{
-  margin:0;
-  aspect-ratio:4/3;
-  overflow:hidden;
-  border-radius:4px;
-}
-.storia-photos img{width:100%;height:100%;object-fit:cover;}
-@media(min-width:901px){
-  .storia-photos{grid-template-columns:minmax(0,1fr);max-width:420px;}
-  .storia-photos figure{aspect-ratio:16/10;}
 }
 .timeline{
   position:relative;
