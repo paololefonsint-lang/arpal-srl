@@ -310,27 +310,6 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
   padding-bottom:clamp(48px,7vw,96px);
 }
 .hero-content .container{width:100%;}
-.hero-kicker{
-  font-family:var(--font-display);
-  font-size:.8rem;
-  font-weight:700;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,.94);
-  text-shadow:0 1px 3px rgba(0,0,0,.65),0 2px 18px rgba(0,0,0,.4);
-  margin-bottom:1.2em;
-  display:inline-flex;
-  align-items:center;
-  gap:.7em;
-}
-@media(min-width:901px){.hero-kicker{display:none;}}
-.hero-kicker::before{
-  content:"";
-  width:26px;height:2px;
-  background:var(--c-accent-light);
-  display:inline-block;
-  flex-shrink:0;
-}
 .hero-title{
   font-size:clamp(2.6rem,5.2vw,4.2rem);
   max-width:16ch;
