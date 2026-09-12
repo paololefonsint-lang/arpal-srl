@@ -390,13 +390,13 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 }
 @media(max-width:720px){.hero-scroll{display:none;}}
 @media(max-width:560px){
-  .hero{align-items:center;}
+  .hero{align-items:flex-start;}
   .hero-title{font-size:clamp(2.1rem,9vw,3rem);max-width:14ch;}
   .hero-sub{margin-top:1rem;font-size:.98rem;}
   .hero-actions{margin-top:1.6rem;gap:.7rem;}
   .hero-meta{margin-top:1.8rem;gap:1.2rem 1.6rem;padding-top:1.2rem;}
   .hero-meta div strong{font-size:1.5rem;}
-  .hero-content{padding-top:100px;padding-bottom:32px;}
+  .hero-content{padding-top:min(38vh,260px);padding-bottom:40px;}
 }
 
 /* -------------------------------------------------- services strip (home) */
