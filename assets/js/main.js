@@ -93,6 +93,14 @@
   }
 
   /* ---------------------------------------------------- render galleries */
+  function webpOf(src){
+    return /\.jpe?g$/i.test(src) ? src.replace(/\.jpe?g$/i, ".webp") : null;
+  }
+  function pictureHTML(src, alt, extraAttrs){
+    const webp = webpOf(src);
+    if(!webp) return `<img src="${src}" alt="${alt}" ${extraAttrs}>`;
+    return `<picture><source srcset="${webp}" type="image/webp"><img src="${src}" alt="${alt}" ${extraAttrs}></picture>`;
+  }
   function renderGalleries(){
     document.querySelectorAll("[data-gallery]").forEach(container=>{
       const key = container.getAttribute("data-gallery");
@@ -101,12 +109,12 @@
       container.innerHTML = items.map((it, i)=>{
         if(it.video){
           return `<button type="button" class="gallery-item" data-video="${it.src}" data-index="${i}" aria-label="Riproduci video">
-            <img src="${it.poster}" alt="${it.alt}" loading="lazy" decoding="async">
+            ${pictureHTML(it.poster, it.alt, 'loading="lazy" decoding="async"')}
             <span class="play"><span></span></span>
           </button>`;
         }
         return `<button type="button" class="gallery-item" data-index="${i}" aria-label="${it.alt}">
-          <img src="${it.src}" alt="${it.alt}" loading="lazy" decoding="async">
+          ${pictureHTML(it.src, it.alt, 'loading="lazy" decoding="async"')}
         </button>`;
       }).join("");
     });
@@ -133,7 +141,7 @@
     if(it.video){
       media.innerHTML = `<video src="${it.src}" controls autoplay playsinline poster="${it.poster||""}"></video>`;
     } else {
-      media.innerHTML = `<img src="${it.src}" alt="${it.alt}">`;
+      media.innerHTML = pictureHTML(it.src, it.alt, 'decoding="async"');
     }
   }
   if(lightbox){
@@ -179,7 +187,7 @@
   const materialModal = document.querySelector(".modal[data-modal='material']");
   if(materialGrid && window.ARPAL_MATERIALS){
     materialGrid.innerHTML = window.ARPAL_MATERIALS.map(m=>`
-      <button type="button" class="material-card" data-material="${m.id}">
+      <button type="button" class="material-card" data-material="${m.id}" style="--mat-bg:url('/assets/img/materiali/${m.id}.jpg')">
         <span class="mat-tag">${m.tag}</span>
         <h3>${m.name}</h3>
         <span class="mat-more">Scopri di più <span aria-hidden="true">&rarr;</span></span>

@@ -130,23 +130,12 @@ window.ARPAL_MATERIALS = [
 ];
 
 window.ARPAL_GALLERIES = {
-  coperture:[
-    {src:"assets/img/coperture/cornicione-alluminio-1.jpg", alt:"Cornicione di copertura in alluminio nero opaco"},
-    {src:"assets/img/coperture/portale-corten-1.jpg", alt:"Portale con finitura corten integrato in copertura"},
-    {src:"assets/img/coperture/cornicione-alluminio-2.jpg", alt:"Dettaglio cornicione in alluminio nero opaco"},
-    {src:"assets/img/coperture/portale-corten-2.jpg", alt:"Portale corten, vista di dettaglio"}
-  ],
-  facciate:[
-    {src:"assets/img/coperture/cornicione-alluminio-1.jpg", alt:"Facciata con cornicione tecnico in alluminio nero opaco"},
-    {src:"assets/img/coperture/cornicione-alluminio-3.jpg", alt:"Dettaglio dell'involucro in alluminio"},
-    {src:"assets/img/coperture/portale-corten-1.jpg", alt:"Portale in corten integrato in facciata"},
-    {src:"assets/img/coperture/portale-corten-3.jpg", alt:"Dettaglio finitura corten su facciata"}
-  ],
+  coperture:[],
+  facciate:[],
   rivestimenti:[
-    {src:"assets/img/coperture/portale-corten-2.jpg", alt:"Rivestimento metallico effetto corten, portale d'ingresso"},
-    {src:"assets/img/coperture/portale-corten-3.jpg", alt:"Portale con rivestimento in acciaio corten"},
-    {src:"assets/img/coperture/cornicione-alluminio-2.jpg", alt:"Rivestimento tecnico in alluminio nero opaco"},
-    {src:"assets/img/coperture/cornicione-alluminio-3.jpg", alt:"Rivestimento in alluminio, vista d'insieme"}
+    {src:"assets/img/rivestimenti-metallici/portale-corten-1.jpg", alt:"Portale in corten, vista d'insieme"},
+    {src:"assets/img/rivestimenti-metallici/portale-corten-2.jpg", alt:"Rivestimento metallico effetto corten, portale d'ingresso"},
+    {src:"assets/img/rivestimenti-metallici/portale-corten-3.jpg", alt:"Portale con rivestimento in acciaio corten"}
   ],
   lineavita:[
     {src:"assets/img/lineavita/lineavita-2.jpg", alt:"Linea vita su copertura metallica aggraffata"},
