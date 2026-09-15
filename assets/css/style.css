@@ -1030,12 +1030,13 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 .cookie-banner-inner{
   max-width:1200px;margin:0 auto;
   padding:1.4rem var(--gutter);
-  display:flex;align-items:center;justify-content:space-between;
-  gap:1.6rem;flex-wrap:wrap;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;
+  gap:1.2rem;
 }
-.cookie-banner p{font-size:.88rem;max-width:62ch;line-height:1.6;}
+.cookie-banner p{font-size:.88rem;max-width:62ch;line-height:1.6;margin:0 auto;}
 .cookie-banner a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
-.cookie-banner-actions{display:flex;gap:.8rem;flex-wrap:wrap;}
+.cookie-banner-actions{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;}
 
 @media(max-width:900px){
   .nav-desktop,.nav-right .btn-ghost{display:none;}
