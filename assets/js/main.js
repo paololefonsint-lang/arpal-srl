@@ -107,6 +107,13 @@
     }
   });
 
+  /* ---------------------------------------------------- anteprima touch -- */
+  if(window.matchMedia("(hover: none)").matches){
+    document.querySelectorAll(".strip-item").forEach(item=>{
+      item.addEventListener("touchstart", ()=> item.classList.add("is-touched"), {passive:true});
+    });
+  }
+
   /* ---------------------------------------------------- smooth anchors -- */
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
     a.addEventListener("click", (e)=>{
