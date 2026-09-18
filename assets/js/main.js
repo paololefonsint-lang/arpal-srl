@@ -109,9 +109,17 @@
 
   /* ---------------------------------------------------- anteprima touch -- */
   if(window.matchMedia("(hover: none)").matches){
-    document.querySelectorAll(".strip-item").forEach(item=>{
-      item.addEventListener("touchstart", ()=> item.classList.add("is-touched"), {passive:true});
+    const stripItems = document.querySelectorAll(".strip-item");
+    stripItems.forEach(item=>{
+      item.addEventListener("touchstart", ()=>{
+        stripItems.forEach(other=> other.classList.toggle("is-touched", other === item));
+      }, {passive:true});
     });
+    document.addEventListener("touchstart", (e)=>{
+      if(!e.target.closest(".strip-item")){
+        stripItems.forEach(other=> other.classList.remove("is-touched"));
+      }
+    }, {passive:true});
   }
 
   /* ---------------------------------------------------- smooth anchors -- */
