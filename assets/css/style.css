@@ -491,6 +491,15 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
   position:relative;
   overflow:hidden;
 }
+/* url() nella custom property tenuta nel foglio di stile, non inline:
+   GSAP scrive transform/opacity sull'attributo style di .reveal-fast e,
+   su alcuni browser mobili, la riscrittura corrompe l'apice dentro url() */
+.strip-item--facciate{--strip-bg:url('/assets/img/anteprime-servizi/facciate.jpg');}
+.strip-item--coperture{--strip-bg:url('/assets/img/anteprime-servizi/coperture.jpg');}
+.strip-item--rivestimenti{--strip-bg:url('/assets/img/anteprime-servizi/rivestimenti-metallici.jpg');}
+.strip-item--lineavita{--strip-bg:url('/assets/img/anteprime-servizi/linea-vita.jpg');}
+.strip-item--impermeabilizzazioni{--strip-bg:url('/assets/img/anteprime-servizi/impermeabilizzazioni.jpg');}
+.strip-item--laghi{--strip-bg:url('/assets/img/anteprime-servizi/laghi-artificiali.jpg');}
 .strip-item::before{
   content:"";
   position:absolute;inset:0;
