@@ -12,7 +12,7 @@ window.ARPAL_TIMELINE = [
   { year:"2018", title:"Nascono lattoneria e rivestimenti", text:"ARPAL amplia le proprie competenze entrando nel settore della lattoneria e dei rivestimenti metallici. All'esperienza maturata nelle impermeabilizzazioni si affiancano nuove lavorazioni dedicate a coperture, facciate e rivestimenti architettonici." },
   { year:"2021", title:"Il passaggio generazionale", text:"La seconda generazione della famiglia Arduino assume la guida di Arpal: il passaggio generazionale rafforza la continuità familiare dell'impresa, che prosegue il percorso iniziato oltre quarant'anni prima." },
   { year:"2024", title:"Cresce la struttura aziendale", text:"Negli ultimi anni ARPAL continua a investire nelle proprie competenze e nella crescita della struttura aziendale, ampliando il proprio parco veicolare." },
-  { year:"2025", title:"Una squadra sempre più specializzata", text:"La crescita del settore lattoneria compie un nuovo passo: ARPAL può contare su un team di lattonieri specializzati e certificati CERTIS, a conferma dell'investimento nella formazione e nella qualità delle lavorazioni." },
+  { year:"current", title:"Una squadra sempre più specializzata", text:"La crescita del settore lattoneria compie un nuovo passo: ARPAL può contare su un team di lattonieri specializzati e certificati CERTIS, a conferma dell'investimento nella formazione e nella qualità delle lavorazioni." },
 ];
 
 window.ARPAL_MATERIALS = [
@@ -130,17 +130,29 @@ window.ARPAL_MATERIALS = [
 ];
 
 window.ARPAL_GALLERIES = {
-  coperture:[],
-  facciate:[],
+  coperture:[
+    {src:"assets/img/coperture/copertura-alluminio-grigio-1.jpg", alt:"Copertura in alluminio grigio chiaro"},
+    {src:"assets/img/coperture/copertura-alluminio-patinato-1.jpg", alt:"Copertura in alluminio pre-patinato"},
+    {src:"assets/img/coperture/copertura-rame-1.jpg", alt:"Copertura in rame"},
+    {src:"assets/img/coperture/copertura-antracite-1.jpg", alt:"Copertura in alluminio antracite"}
+  ],
+  facciate:[
+    {src:"assets/img/facciate/facciata-parete-ventilata-1.jpg", alt:"Facciata a parete ventilata"},
+    {src:"assets/img/facciate/facciata-involucro-bronzato-1.jpg", alt:"Involucro bronzato"},
+    {src:"assets/img/facciate/facciata-hpl-1.jpg", alt:"Facciata in HPL"},
+    {src:"assets/img/facciate/facciata-acciaio-specchio-1.jpg", alt:"Facciata con acciaio a specchio"}
+  ],
   rivestimenti:[
     {src:"assets/img/rivestimenti-metallici/portale-corten-1.jpg", alt:"Portale in corten, vista d'insieme"},
-    {src:"assets/img/rivestimenti-metallici/portale-corten-2.jpg", alt:"Rivestimento metallico effetto corten, portale d'ingresso"},
-    {src:"assets/img/rivestimenti-metallici/portale-corten-3.jpg", alt:"Portale con rivestimento in acciaio corten"}
+    {src:"assets/img/rivestimenti-metallici/rivestimento-pensilina-1.jpg", alt:"Pensilina in metallo"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-rheinzink-1.jpg", alt:"Rivestimento in Rheinzink"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-1.jpg", alt:"Rivestimento metallico su bow window"}
   ],
   lineavita:[
     {src:"assets/img/lineavita/lineavita-2.jpg", alt:"Linea vita su copertura metallica aggraffata"},
     {src:"assets/img/lineavita/lineavita-1.jpg", alt:"Punto di ancoraggio linea vita, dettaglio"},
-    {src:"assets/img/lineavita/lineavita-3.jpg", alt:"Sistema anticaduta installato in copertura"}
+    {src:"assets/img/lineavita/lineavita-3.jpg", alt:"Sistema anticaduta installato in copertura"},
+    {src:"assets/img/lineavita/lineavita-4.jpg", alt:"Linea vita orizzontale su copertura in rame"}
   ],
   impermeabilizzazioni:[
     {src:"assets/img/impermeabilizzazioni/guaina-bituminosa-1.jpg", alt:"Posa di guaina bituminosa ceramizzata"},
@@ -153,5 +165,87 @@ window.ARPAL_GALLERIES = {
     {src:"assets/img/laghi/bacino-epdm-2.jpg", alt:"Bacino artificiale in EPDM, vista d'insieme"},
     {src:"assets/img/laghi/bacino-epdm-3.jpg", alt:"Dettaglio membrana EPDM in bacino artificiale"},
     {src:"assets/img/laghi/bacino-epdm.mp4", alt:"Video: realizzazione bacino artificiale in EPDM", video:true, poster:"assets/img/laghi/bacino-epdm-2.jpg"}
+  ]
+};
+
+window.ARPAL_GALLERIES_EXTRA = {
+  coperture:[
+    {src:"assets/img/coperture/cornicione-alluminio-1.jpg", alt:"Cornicione di copertura in alluminio nero opaco"},
+    {src:"assets/img/coperture/cornicione-alluminio-2.jpg", alt:"Dettaglio cornicione in alluminio nero opaco"},
+    {src:"assets/img/coperture/cornicione-alluminio-3.jpg", alt:"Cornicione di copertura, vista d'insieme"},
+    {src:"assets/img/coperture/copertura-alluminio-grigio-2.jpg", alt:"Copertura in alluminio grigio chiaro"},
+    {src:"assets/img/coperture/copertura-alluminio-grigio-3.jpg", alt:"Copertura in alluminio grigio chiaro"},
+    {src:"assets/img/coperture/copertura-alluminio-grigio-4.jpg", alt:"Copertura in alluminio grigio chiaro"},
+    {src:"assets/img/coperture/copertura-alluminio-grigio-5.jpg", alt:"Copertura in alluminio grigio chiaro"},
+    {src:"assets/img/coperture/copertura-alluminio-grigio-6.jpg", alt:"Copertura in alluminio grigio chiaro"},
+    {src:"assets/img/coperture/copertura-alluminio-patinato-2.jpg", alt:"Copertura in alluminio pre-patinato"},
+    {src:"assets/img/coperture/copertura-alluminio-patinato-3.jpg", alt:"Copertura in alluminio pre-patinato"},
+    {src:"assets/img/coperture/copertura-rame-2.jpg", alt:"Copertura in rame"},
+    {src:"assets/img/coperture/copertura-rame-3.jpg", alt:"Copertura in rame"},
+    {src:"assets/img/coperture/copertura-antracite-2.jpg", alt:"Copertura in alluminio antracite"},
+    {src:"assets/img/coperture/copertura-antracite-3.jpg", alt:"Copertura in alluminio antracite"},
+    {src:"assets/img/coperture/copertura-lastre-1.jpg", alt:"Copertura con lastre di larghezza differenti"},
+    {src:"assets/img/coperture/copertura-lastre-2.jpg", alt:"Copertura con lastre di larghezza differenti"},
+    {src:"assets/img/coperture/copertura-lastre-3.jpg", alt:"Copertura con lastre di larghezza differenti"}
+  ],
+  facciate:[
+    {src:"assets/img/facciate/facciata-parete-ventilata-2.jpg", alt:"Facciata a parete ventilata"},
+    {src:"assets/img/facciate/facciata-parete-ventilata-3.jpg", alt:"Facciata a parete ventilata"},
+    {src:"assets/img/facciate/facciata-parete-ventilata-4.jpg", alt:"Facciata a parete ventilata"},
+    {src:"assets/img/facciate/facciata-parete-ventilata-5.jpg", alt:"Facciata a parete ventilata"},
+    {src:"assets/img/facciate/facciata-involucro-bronzato-2.jpg", alt:"Involucro bronzato"},
+    {src:"assets/img/facciate/facciata-hpl-2.jpg", alt:"Facciata in HPL"},
+    {src:"assets/img/facciate/facciata-hpl-3.jpg", alt:"Facciata in HPL"},
+    {src:"assets/img/facciate/facciata-acciaio-specchio-2.jpg", alt:"Facciata con acciaio a specchio"},
+    {src:"assets/img/facciate/facciata-acciaio-specchio-3.jpg", alt:"Facciata con acciaio a specchio"},
+    {src:"assets/img/facciate/facciata-zinco-titanio-1.jpg", alt:"Facciata in zinco-titanio"},
+    {src:"assets/img/facciate/facciata-zinco-titanio-2.jpg", alt:"Facciata in zinco-titanio"},
+    {src:"assets/img/facciate/facciata-zinco-titanio-3.jpg", alt:"Facciata in zinco-titanio"},
+    {src:"assets/img/facciate/facciata-zinco-titanio-4.jpg", alt:"Facciata in zinco-titanio"},
+    {src:"assets/img/facciate/facciata-zinco-titanio-5.jpg", alt:"Facciata in zinco-titanio"},
+    {src:"assets/img/facciate/facciata-zinco-titanio-6.jpg", alt:"Facciata in zinco-titanio"},
+    {src:"assets/img/facciate/facciata-alluminio-1.jpg", alt:"Facciata in alluminio"},
+    {src:"assets/img/facciate/facciata-alluminio-2.jpg", alt:"Facciata in alluminio"},
+    {src:"assets/img/facciate/facciata-ingresso-zinco-1.jpg", alt:"Ingresso in zinco-titanio"}
+  ],
+  rivestimenti:[
+    {src:"assets/img/rivestimenti-metallici/portale-corten-2.jpg", alt:"Rivestimento metallico effetto corten, portale d'ingresso"},
+    {src:"assets/img/rivestimenti-metallici/portale-corten-3.jpg", alt:"Portale con rivestimento in acciaio corten"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-pensilina-2.jpg", alt:"Pensilina in metallo"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-pensilina-3.jpg", alt:"Pensilina in metallo"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-alluminio-composito-1.jpg", alt:"Rivestimento in alluminio composito"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-alluminio-composito-2.jpg", alt:"Rivestimento in alluminio composito"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-alluminio-composito-3.jpg", alt:"Rivestimento in alluminio composito"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-verde-maculato-1.jpg", alt:"Rivestimento in alluminio verde maculato"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-verde-maculato-2.jpg", alt:"Rivestimento in alluminio verde maculato"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-rheinzink-2.jpg", alt:"Rivestimento in Rheinzink"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-rheinzink-3.jpg", alt:"Rivestimento in Rheinzink"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-1.jpg", alt:"Rivestimento in zinco-titanio quartz"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-2.jpg", alt:"Rivestimento in zinco-titanio quartz"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-3.jpg", alt:"Rivestimento in zinco-titanio quartz"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-2.jpg", alt:"Rivestimento metallico su bow window"},
+    {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-3.jpg", alt:"Rivestimento metallico su bow window"}
+  ],
+  impermeabilizzazioni:[
+    {src:"assets/img/impermeabilizzazioni/guaina-nera-2.jpg", alt:"Guaina ceramizzata nera su copertura"},
+    {src:"assets/img/impermeabilizzazioni/copertura-2.jpg", alt:"Copertura impermeabilizzata"},
+    {src:"assets/img/impermeabilizzazioni/copertura-3.jpg", alt:"Copertura impermeabilizzata"},
+    {src:"assets/img/impermeabilizzazioni/copertura-pendente-2.jpg", alt:"Copertura pendente impermeabilizzata"},
+    {src:"assets/img/impermeabilizzazioni/dettaglio-1.jpg", alt:"Dettaglio di impermeabilizzazione"},
+    {src:"assets/img/impermeabilizzazioni/dettaglio-2.jpg", alt:"Dettaglio di impermeabilizzazione"},
+    {src:"assets/img/impermeabilizzazioni/dettaglio-3.jpg", alt:"Posa di guaina bituminosa a fiamma"},
+    {src:"assets/img/impermeabilizzazioni/guaina-ardesiata-1.jpg", alt:"Guaina ardesiata testa di moro"},
+    {src:"assets/img/impermeabilizzazioni/guaina-ardesiata-2.jpg", alt:"Guaina ardesiata testa di moro"},
+    {src:"assets/img/impermeabilizzazioni/guaina-ardesiata-3.jpg", alt:"Guaina ardesiata testa di moro"},
+    {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-1.jpg", alt:"Pannelli isolanti e impermeabilizzazione"},
+    {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-2.jpg", alt:"Pannelli isolanti e impermeabilizzazione"},
+    {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-3.jpg", alt:"Pannelli isolanti e impermeabilizzazione"},
+    {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-4.jpg", alt:"Pannelli isolanti e impermeabilizzazione"},
+    {src:"assets/img/impermeabilizzazioni/guaina-asfalto-1.jpg", alt:"Guaina bituminosa per asfalto colato"},
+    {src:"assets/img/impermeabilizzazioni/guaina-asfalto-2.jpg", alt:"Guaina bituminosa per asfalto colato"},
+    {src:"assets/img/impermeabilizzazioni/copertura-piana-1.jpg", alt:"Impermeabilizzazione copertura piana"},
+    {src:"assets/img/impermeabilizzazioni/copertura-piana-2.jpg", alt:"Impermeabilizzazione copertura piana"},
+    {src:"assets/img/impermeabilizzazioni/impermeabilizzazione-muri-1.jpg", alt:"Impermeabilizzazione muri"},
+    {src:"assets/img/impermeabilizzazioni/impermeabilizzazione-muri-2.jpg", alt:"Impermeabilizzazione muri"}
   ]
 };

@@ -7,6 +7,15 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const isMobile = () => window.innerWidth < 860;
 
+  /* ---------------------------------------------------- date dinamiche -- */
+  const currentYear = new Date().getFullYear();
+  document.querySelectorAll("[data-years-since]").forEach(el=>{
+    el.textContent = currentYear - parseInt(el.dataset.yearsSince, 10);
+  });
+  document.querySelectorAll("[data-current-year]").forEach(el=>{
+    el.textContent = currentYear;
+  });
+
   /* ---------------------------------------------------- Lenis + GSAP ---- */
   let lenis = null;
   if(window.gsap && window.ScrollTrigger){ gsap.registerPlugin(ScrollTrigger); }
@@ -67,7 +76,36 @@
       mobileNav.classList.contains("is-open") ? closeNav() : openNav();
     });
     mobileNav.querySelectorAll("a").forEach(a=> a.addEventListener("click", closeNav));
+    const serviziToggle = mobileNav.querySelector(".mobile-nav-servizi-toggle");
+    const serviziWrap = mobileNav.querySelector(".mobile-nav-servizi");
+    if(serviziToggle && serviziWrap){
+      serviziToggle.addEventListener("click", ()=>{
+        const isOpen = serviziWrap.classList.toggle("is-open");
+        serviziToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    }
   }
+
+  /* ---------------------------------------------------- nav dropdown ---- */
+  document.querySelectorAll(".nav-servizi").forEach(nav=>{
+    const trigger = nav.querySelector(":scope > a");
+    const menu = nav.querySelector(".nav-mega");
+    let closeTimer;
+    const open = ()=>{
+      clearTimeout(closeTimer);
+      nav.classList.add("is-open");
+      if(trigger && menu){
+        menu.style.left = trigger.getBoundingClientRect().left + "px";
+      }
+    };
+    const scheduleClose = ()=>{ clearTimeout(closeTimer); closeTimer = setTimeout(()=> nav.classList.remove("is-open"), 300); };
+    nav.addEventListener("mouseenter", open);
+    nav.addEventListener("mouseleave", scheduleClose);
+    if(menu){
+      menu.addEventListener("mouseenter", open);
+      menu.addEventListener("mouseleave", scheduleClose);
+    }
+  });
 
   /* ---------------------------------------------------- smooth anchors -- */
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
@@ -101,10 +139,15 @@
     if(!webp) return `<img src="${src}" alt="${alt}" ${extraAttrs}>`;
     return `<picture><source srcset="${webp}" type="image/webp"><img src="${src}" alt="${alt}" ${extraAttrs}></picture>`;
   }
+  function galleryItemsFor(key){
+    if(!key) return null;
+    if(key.endsWith("_extra")) return window.ARPAL_GALLERIES_EXTRA?.[key.slice(0, -6)];
+    return window.ARPAL_GALLERIES?.[key];
+  }
   function renderGalleries(){
     document.querySelectorAll("[data-gallery]").forEach(container=>{
       const key = container.getAttribute("data-gallery");
-      const items = window.ARPAL_GALLERIES?.[key];
+      const items = galleryItemsFor(key);
       if(!items) return;
       container.innerHTML = items.map((it, i)=>{
         if(it.video){
@@ -162,12 +205,23 @@
   }
   document.addEventListener("click", (e)=>{
     const btn = e.target.closest(".gallery-item");
-    if(!btn) return;
-    const container = btn.closest("[data-gallery]");
-    const key = container?.getAttribute("data-gallery");
-    const items = window.ARPAL_GALLERIES?.[key];
-    if(!items) return;
-    openLightbox(items, Number(btn.getAttribute("data-index")));
+    if(btn){
+      const container = btn.closest("[data-gallery]");
+      const key = container?.getAttribute("data-gallery");
+      const items = galleryItemsFor(key);
+      if(!items) return;
+      openLightbox(items, Number(btn.getAttribute("data-index")));
+      return;
+    }
+    const allBtn = e.target.closest("[data-gallery-all]");
+    if(allBtn){
+      const key = allBtn.getAttribute("data-gallery-all");
+      const main = window.ARPAL_GALLERIES?.[key] || [];
+      const extra = window.ARPAL_GALLERIES_EXTRA?.[key] || [];
+      const combined = main.concat(extra);
+      if(!combined.length) return;
+      openLightbox(combined, 0);
+    }
   });
 
   /* ---------------------------------------------------- timeline render - */
@@ -176,7 +230,7 @@
     timelineEl.innerHTML = window.ARPAL_TIMELINE.map(t=>`
       <div class="timeline-item">
         <span class="timeline-dot"></span>
-        <div class="timeline-year">${t.year}</div>
+        <div class="timeline-year">${t.year === "current" ? currentYear : t.year}</div>
         <h3>${t.title}</h3>
         <p>${t.text}</p>
       </div>`).join("");
@@ -186,12 +240,20 @@
   const materialGrid = document.querySelector("[data-material-grid]");
   const materialModal = document.querySelector(".modal[data-modal='material']");
   if(materialGrid && window.ARPAL_MATERIALS){
-    materialGrid.innerHTML = window.ARPAL_MATERIALS.map(m=>`
+    const cards = window.ARPAL_MATERIALS.map(m=>`
       <button type="button" class="material-card" data-material="${m.id}" style="--mat-bg:url('/assets/img/materiali/${m.id}.jpg')">
         <span class="mat-tag">${m.tag}</span>
         <h3>${m.name}</h3>
         <span class="mat-more">Scopri di più <span aria-hidden="true">&rarr;</span></span>
-      </button>`).join("");
+      </button>`);
+    // se l'ultima riga della griglia a 3 colonne ha un solo elemento, lo centra
+    // affiancandolo a due celle "vuote" (stesso sfondo delle card, non la linea grigia)
+    if(cards.length % 3 === 1){
+      const spacer = '<div class="material-spacer" aria-hidden="true"></div>';
+      cards.splice(cards.length - 1, 0, spacer);
+      cards.push(spacer);
+    }
+    materialGrid.innerHTML = cards.join("");
   }
   function openMaterial(id){
     const m = window.ARPAL_MATERIALS.find(x=>x.id === id);
