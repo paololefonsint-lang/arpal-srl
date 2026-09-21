@@ -245,7 +245,7 @@
     timelineEl.innerHTML = window.ARPAL_TIMELINE.map(t=>`
       <div class="timeline-item">
         <span class="timeline-dot"></span>
-        <div class="timeline-year">${t.year === "current" ? currentYear : t.year}</div>
+        <div class="timeline-year">${t.year}</div>
         <h3>${t.title}</h3>
         <p>${t.text}</p>
       </div>`).join("");

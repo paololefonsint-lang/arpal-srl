@@ -6,13 +6,12 @@ window.ARPAL_TIMELINE = [
   { year:"1979", title:"Nasce ARPAL", text:"Nasce ARPAL, dando inizio a un percorso dedicato alle tecnologie, ai materiali e alle lavorazioni per il settore edilizio." },
   { year:"1981", title:"ARPAL diventa S.r.l.", text:"ARPAL si trasforma in società a responsabilità limitata. Con la famiglia Arduino alla guida dell'azienda prende forma una nuova fase di sviluppo e consolidamento." },
   { year:"1984", title:"L'attività si amplia", text:"ARPAL amplia il proprio campo di attività, ponendo le basi per una progressiva crescita delle competenze nel settore edilizio." },
-  { year:"1986", title:"L'apertura a Finale Ligure", text:"ARPAL amplia la propria presenza territoriale con l'apertura dell'unità di Finale Ligure, portando la propria esperienza anche sul territorio ligure." },
   { year:"1996", title:"L'apertura di Poirino", text:"Con l'apertura della sede di Poirino, ARPAL rafforza la propria struttura operativa e consolida la presenza sul territorio piemontese." },
   { year:"2001", title:"Dalla posa a un'attività edilizia più completa", text:"ARPAL amplia ulteriormente il proprio raggio d'azione: all'installazione e alla posa si affiancano nuove competenze nella produzione, nelle costruzioni e nelle ristrutturazioni, consolidando il ruolo dell'azienda nel settore edilizio." },
   { year:"2018", title:"Nascono lattoneria e rivestimenti", text:"ARPAL amplia le proprie competenze entrando nel settore della lattoneria e dei rivestimenti metallici. All'esperienza maturata nelle impermeabilizzazioni si affiancano nuove lavorazioni dedicate a coperture, facciate e rivestimenti architettonici." },
   { year:"2021", title:"Il passaggio generazionale", text:"La seconda generazione della famiglia Arduino assume la guida di Arpal: il passaggio generazionale rafforza la continuità familiare dell'impresa, che prosegue il percorso iniziato oltre quarant'anni prima." },
   { year:"2024", title:"Cresce la struttura aziendale", text:"Negli ultimi anni ARPAL continua a investire nelle proprie competenze e nella crescita della struttura aziendale, ampliando il proprio parco veicolare." },
-  { year:"current", title:"Una squadra sempre più specializzata", text:"La crescita del settore lattoneria compie un nuovo passo: ARPAL può contare su un team di lattonieri specializzati e certificati CERTIS, a conferma dell'investimento nella formazione e nella qualità delle lavorazioni." },
+  { year:"2025", title:"Una squadra sempre più specializzata", text:"La crescita del settore lattoneria compie un nuovo passo: ARPAL può contare su un team di lattonieri specializzati e certificati CERTIS, a conferma dell'investimento nella formazione e nella qualità delle lavorazioni." },
 ];
 
 window.ARPAL_MATERIALS = [
@@ -163,8 +162,8 @@ window.ARPAL_GALLERIES = {
   laghi:[
     {src:"assets/img/laghi/bacino-epdm-1.jpg", alt:"Posa membrana EPDM in bacino artificiale"},
     {src:"assets/img/laghi/bacino-epdm-2.jpg", alt:"Bacino artificiale in EPDM, vista d'insieme"},
-    {src:"assets/img/laghi/bacino-epdm-3.jpg", alt:"Dettaglio membrana EPDM in bacino artificiale"},
-    {src:"assets/img/laghi/bacino-epdm.mp4", alt:"Video: realizzazione bacino artificiale in EPDM", video:true, poster:"assets/img/laghi/bacino-epdm-2.jpg"}
+    {src:"assets/img/laghi/bacino-epdm-4.jpg", alt:"Bacino artificiale rivestito in EPDM, vista d'insieme"},
+    {src:"assets/img/laghi/bacino-epdm-5.jpg", alt:"Bacino artificiale in EPDM durante la posa del rivestimento"}
   ]
 };
 

@@ -496,7 +496,7 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
    su alcuni browser mobili, la riscrittura corrompe l'apice dentro url() */
 .strip-item--facciate{--strip-bg:url('/assets/img/anteprime-servizi/facciate.jpg');}
 .strip-item--coperture{--strip-bg:url('/assets/img/anteprime-servizi/coperture.jpg');}
-.strip-item--rivestimenti{--strip-bg:url('/assets/img/anteprime-servizi/rivestimenti-metallici.jpg');}
+.strip-item--rivestimenti{--strip-bg:url('/assets/img/anteprime-servizi/rivestimenti-metallici-2.jpg');}
 .strip-item--lineavita{--strip-bg:url('/assets/img/anteprime-servizi/linea-vita.jpg');}
 .strip-item--impermeabilizzazioni{--strip-bg:url('/assets/img/anteprime-servizi/impermeabilizzazioni.jpg');}
 .strip-item--laghi{--strip-bg:url('/assets/img/anteprime-servizi/laghi-artificiali.jpg');}
@@ -969,7 +969,7 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 .contact-card .eyebrow{margin-bottom:.7rem;}
 .contact-card a,.contact-card p{color:var(--c-ink-soft);font-size:.98rem;}
 .contact-card a:hover{color:var(--c-accent);}
-.contact-card .row{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-top:1px solid var(--c-line);}
+.contact-card .row{display:flex;justify-content:space-between;gap:1rem;text-align:right;padding:.5rem 0;border-top:1px solid var(--c-line);}
 .contact-card .row:first-of-type{border-top:0;}
 .contact-map{
   border-radius:4px;
