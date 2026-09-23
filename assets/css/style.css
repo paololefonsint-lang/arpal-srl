@@ -372,7 +372,7 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 .hero::after{
   content:"";
   position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(6,9,14,.58) 0%,rgba(6,9,14,.4) 38%,rgba(6,9,14,.9) 100%);
+  background:linear-gradient(180deg,rgba(6,9,14,.42) 0%,rgba(6,9,14,.26) 38%,rgba(6,9,14,.76) 100%);
   z-index:1;
 }
 .hero-content{
@@ -497,7 +497,7 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 .strip-item--facciate{--strip-bg:url('/assets/img/anteprime-servizi/facciate.jpg');}
 .strip-item--coperture{--strip-bg:url('/assets/img/anteprime-servizi/coperture.jpg');}
 .strip-item--rivestimenti{--strip-bg:url('/assets/img/anteprime-servizi/rivestimenti-metallici-2.jpg');}
-.strip-item--lineavita{--strip-bg:url('/assets/img/anteprime-servizi/linea-vita.jpg');}
+.strip-item--lineavita{--strip-bg:url('/assets/img/lineavita/lineavita-4.jpg');}
 .strip-item--impermeabilizzazioni{--strip-bg:url('/assets/img/anteprime-servizi/impermeabilizzazioni.jpg');}
 .strip-item--laghi{--strip-bg:url('/assets/img/anteprime-servizi/laghi-artificiali.jpg');}
 .strip-item::before{
@@ -1079,17 +1079,15 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
   right:var(--gutter);
   top:50%;
   transform:translateY(-50%);
-  font-family:var(--font-display);
-  font-weight:800;
-  font-size:min(30vw,340px);
-  line-height:1;
-  color:rgba(255,255,255,.045);
+  width:min(42vw,520px);
+  height:auto;
+  opacity:.07;
   pointer-events:none;
   z-index:0;
   user-select:none;
 }
 @media(max-width:900px){
-  .assist-watermark{font-size:min(45vw,260px);}
+  .assist-watermark{width:min(60vw,340px);}
 }
 .cta-band .container{position:relative;z-index:1;}
 

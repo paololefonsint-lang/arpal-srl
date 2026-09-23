@@ -148,10 +148,10 @@ window.ARPAL_GALLERIES = {
     {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-1.jpg", alt:"Rivestimento metallico su bow window"}
   ],
   lineavita:[
-    {src:"assets/img/lineavita/lineavita-2.jpg", alt:"Linea vita su copertura metallica aggraffata"},
-    {src:"assets/img/lineavita/lineavita-1.jpg", alt:"Punto di ancoraggio linea vita, dettaglio"},
-    {src:"assets/img/lineavita/lineavita-3.jpg", alt:"Sistema anticaduta installato in copertura"},
-    {src:"assets/img/lineavita/lineavita-4.jpg", alt:"Linea vita orizzontale su copertura in rame"}
+    {src:"assets/img/lineavita/lineavita-1.jpg", alt:"Punto di ancoraggio linea vita su copertura metallica aggraffata"},
+    {src:"assets/img/lineavita/lineavita-2.jpg", alt:"Dettaglio staffa di ancoraggio linea vita"},
+    {src:"assets/img/lineavita/lineavita-3.jpg", alt:"Linea vita con più punti di ancoraggio su copertura aggraffata"},
+    {src:"assets/img/lineavita/lineavita-4.jpg", alt:"Punto di ancoraggio linea vita su copertura in rame"}
   ],
   impermeabilizzazioni:[
     {src:"assets/img/impermeabilizzazioni/guaina-bituminosa-1.jpg", alt:"Posa di guaina bituminosa ceramizzata"},
