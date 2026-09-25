@@ -5,10 +5,10 @@
 window.ARPAL_TIMELINE = [
   { year:"1979", title:"Nasce ARPAL", text:"Nasce ARPAL, dando inizio a un percorso dedicato alle tecnologie, ai materiali e alle lavorazioni per il settore edilizio." },
   { year:"1981", title:"ARPAL diventa S.r.l.", text:"ARPAL si trasforma in società a responsabilità limitata. Con la famiglia Arduino alla guida dell'azienda prende forma una nuova fase di sviluppo e consolidamento." },
-  { year:"1984", title:"L'attività si amplia", text:"ARPAL amplia il proprio campo di attività, ponendo le basi per una progressiva crescita delle competenze nel settore edilizio." },
+  { year:"1984", title:"I primi lavori di lattoneria", text:"ARPAL amplia il proprio campo di attività iniziando a eseguire i primi lavori di lattoneria semplice. Un nuovo ambito operativo che, negli anni, diventerà una delle competenze distintive dell'azienda." },
   { year:"1996", title:"L'apertura di Poirino", text:"Con l'apertura della sede di Poirino, ARPAL rafforza la propria struttura operativa e consolida la presenza sul territorio piemontese." },
   { year:"2001", title:"Dalla posa a un'attività edilizia più completa", text:"ARPAL amplia ulteriormente il proprio raggio d'azione: all'installazione e alla posa si affiancano nuove competenze nella produzione, nelle costruzioni e nelle ristrutturazioni, consolidando il ruolo dell'azienda nel settore edilizio." },
-  { year:"2018", title:"Nascono lattoneria e rivestimenti", text:"ARPAL amplia le proprie competenze entrando nel settore della lattoneria e dei rivestimenti metallici. All'esperienza maturata nelle impermeabilizzazioni si affiancano nuove lavorazioni dedicate a coperture, facciate e rivestimenti architettonici." },
+  { year:"2018", title:"La lattoneria si evolve", text:"L'esperienza maturata nel tempo nella lattoneria si evolve verso lavorazioni sempre più specialistiche. ARPAL amplia la propria offerta con soluzioni dedicate a coperture, facciate e rivestimenti metallici, sviluppando nuove competenze tecniche e realizzative." },
   { year:"2021", title:"Il passaggio generazionale", text:"La seconda generazione della famiglia Arduino assume la guida di Arpal: il passaggio generazionale rafforza la continuità familiare dell'impresa, che prosegue il percorso iniziato oltre quarant'anni prima." },
   { year:"2024", title:"Cresce la struttura aziendale", text:"Negli ultimi anni ARPAL continua a investire nelle proprie competenze e nella crescita della struttura aziendale, ampliando il proprio parco veicolare." },
   { year:"2025", title:"Una squadra sempre più specializzata", text:"La crescita del settore lattoneria compie un nuovo passo: ARPAL può contare su un team di lattonieri specializzati e certificati CERTIS, a conferma dell'investimento nella formazione e nella qualità delle lavorazioni." },
@@ -30,7 +30,7 @@ window.ARPAL_MATERIALS = [
     id:"rame", tag:"Metalli", name:"Rame",
     lede:"Il materiale più tradizionale e prestigioso: sviluppa nel tempo una patina protettiva dal carattere unico.",
     text:[
-      "Il rame è uno dei materiali più tradizionali e prestigiosi utilizzati nell'architettura per la realizzazione di <a href=\"coperture.html\">coperture</a>, <a href=\"rivestimenti-metallici.html\">rivestimenti</a> e opere di lattoneria.",
+      "Il rame è uno dei materiali più tradizionali e prestigiosi utilizzati nell'architettura per la realizzazione di <a href=\"coperture.html\">coperture</a>, <a href=\"facciate.html\">facciate</a>, <a href=\"rivestimenti-metallici.html\">rivestimenti</a> e opere di lattoneria.",
       "La sua caratteristica più riconoscibile è la naturale trasformazione della superficie nel corso del tempo. Esposto agli agenti atmosferici, il rame modifica progressivamente il proprio colore fino alla formazione di una patina naturale protettiva, il cui aspetto varia in funzione delle condizioni ambientali e dell'esposizione.",
       "Questa evoluzione non rappresenta un deterioramento del materiale, ma contribuisce alla sua protezione e conferisce alle superfici un carattere unico e mutevole.",
       "Il rame è inoltre estremamente duttile e malleabile: può essere facilmente sagomato e adattato anche a coperture curve, dettagli complessi e particolari architettonici."
@@ -60,6 +60,29 @@ window.ARPAL_MATERIALS = [
     benefits:["Lunghissima durata se correttamente progettato e posato","Formazione naturale di una patina superficiale protettiva","Ridotte esigenze di manutenzione","Elevata lavorabilità","Adatto a coperture, facciate e opere di lattoneria","Ideale anche per geometrie architettoniche complesse","Aspetto naturale ed elegante","Materiale altamente riciclabile"]
   },
   {
+    id:"hpl", tag:"Sistemi", name:"Pannelli HPL",
+    lede:"Laminati compatti ad alta pressione: durabilità e libertà progettuale per facciate ventilate e rivestimenti esterni.",
+    text:[
+      "I pannelli HPL (High Pressure Laminate) sono laminati compatti ad alta pressione utilizzati per il rivestimento di <a href=\"facciate.html\">facciate</a> e superfici esterne.",
+      "La loro struttura compatta garantisce elevata resistenza agli agenti atmosferici, agli urti e all'usura, rendendoli particolarmente adatti alle facciate ventilate e agli interventi di riqualificazione dell'involucro edilizio.",
+      "Disponibili in un'ampia gamma di colori, texture e finiture — dalle superfici uniformi agli effetti legno, pietra o materici — permettono di coniugare durabilità e libertà progettuale.",
+      "La facilità di lavorazione consente inoltre di realizzare pannellature di differenti formati e geometrie, adattando il <a href=\"rivestimenti-metallici.html\">rivestimento</a> alle caratteristiche architettoniche dell'edificio."
+    ],
+    benefits:["Elevata resistenza agli agenti atmosferici","Resistenza agli urti e all'usura","Stabilità delle finiture e dei colori","Ampia scelta di colori, texture e superfici","Facilità di manutenzione","Ideale per facciate ventilate e rivestimenti esterni"]
+  },
+  {
+    id:"corten", tag:"Metalli", name:"Corten",
+    lede:"Acciaio auto patinabile dall'estetica unica: il colore evolve nel tempo con le tonalità calde della ruggine.",
+    text:[
+      "Il Corten, o più in generale acciaio auto patinabile, è un materiale fortemente caratterizzante dal punto di vista architettonico.",
+      "La sua particolarità consiste nella capacità di sviluppare, quando esposto alle condizioni ambientali appropriate, una patina superficiale dall'aspetto naturale e mutevole, caratterizzata dalle tipiche tonalità calde che vanno dall'arancio al bruno scuro.",
+      "Questa patina non ha soltanto una funzione estetica: nelle corrette condizioni di esposizione forma uno strato aderente che rallenta il processo di corrosione del materiale sottostante.",
+      "Il risultato è una superficie viva, il cui colore e aspetto cambiano progressivamente nel corso del tempo e che si inserisce con particolare efficacia sia nei contesti urbani sia negli ambienti naturali.",
+      "Per queste caratteristiche viene spesso utilizzato per <a href=\"facciate.html\">facciate</a>, <a href=\"rivestimenti-metallici.html\">rivestimenti</a>, portali ed elementi architettonici nei quali il materiale stesso deve diventare protagonista del progetto."
+    ],
+    benefits:["Estetica unica e fortemente riconoscibile","Formazione naturale di una patina protettiva","Colore e superficie che evolvono nel tempo","Elevata resistenza meccanica","Buona resistenza alla corrosione atmosferica","Possibilità di utilizzo senza verniciatura in molte applicazioni","Ideale per facciate e rivestimenti contemporanei","Si integra bene con vetro, legno, calcestruzzo e pietra"]
+  },
+  {
     id:"acciaio-inox", tag:"Metalli", name:"Acciaio inox",
     lede:"Resistenza, durabilità ed elevato valore estetico per rivestimenti e dettagli architettonici.",
     text:[
@@ -82,18 +105,6 @@ window.ARPAL_MATERIALS = [
     benefits:["Peso contenuto rispetto alle dimensioni dei pannelli","Elevata rigidità e stabilità","Ottima planarità delle superfici","Buona resistenza agli agenti atmosferici","Grande libertà progettuale","Facilmente lavorabili: taglio, fresatura, foratura, piegatura","Ampia gamma di colori e finiture","Particolarmente indicati per facciate ventilate"]
   },
   {
-    id:"corten", tag:"Metalli", name:"Corten",
-    lede:"Acciaio auto patinabile dall'estetica unica: il colore evolve nel tempo con le tonalità calde della ruggine.",
-    text:[
-      "Il Corten, o più in generale acciaio auto patinabile, è un materiale fortemente caratterizzante dal punto di vista architettonico.",
-      "La sua particolarità consiste nella capacità di sviluppare, quando esposto alle condizioni ambientali appropriate, una patina superficiale dall'aspetto naturale e mutevole, caratterizzata dalle tipiche tonalità calde che vanno dall'arancio al bruno scuro.",
-      "Questa patina non ha soltanto una funzione estetica: nelle corrette condizioni di esposizione forma uno strato aderente che rallenta il processo di corrosione del materiale sottostante.",
-      "Il risultato è una superficie viva, il cui colore e aspetto cambiano progressivamente nel corso del tempo e che si inserisce con particolare efficacia sia nei contesti urbani sia negli ambienti naturali.",
-      "Per queste caratteristiche viene spesso utilizzato per <a href=\"facciate.html\">facciate</a>, <a href=\"rivestimenti-metallici.html\">rivestimenti</a>, portali ed elementi architettonici nei quali il materiale stesso deve diventare protagonista del progetto."
-    ],
-    benefits:["Estetica unica e fortemente riconoscibile","Formazione naturale di una patina protettiva","Colore e superficie che evolvono nel tempo","Elevata resistenza meccanica","Buona resistenza alla corrosione atmosferica","Possibilità di utilizzo senza verniciatura in molte applicazioni","Ideale per facciate e rivestimenti contemporanei","Si integra bene con vetro, legno, calcestruzzo e pietra"]
-  },
-  {
     id:"membrane-bituminose", tag:"Impermeabilizzazione", name:"Membrane bituminose",
     lede:"La soluzione più consolidata e versatile per i sistemi impermeabili in edilizia.",
     text:[
@@ -114,6 +125,17 @@ window.ARPAL_MATERIALS = [
       "Arpal utilizza questa tecnologia anche per l'impermeabilizzazione di <a href=\"laghi-artificiali.html\">laghi e bacini artificiali</a>, dove elasticità, continuità del rivestimento e capacità di adattarsi alla conformazione del fondo sono caratteristiche fondamentali."
     ],
     benefits:["Elevata elasticità e flessibilità","Grande capacità di adattarsi alle geometrie del supporto","Ottima resistenza ai raggi UV e all'ozono","Elevata resistenza agli agenti atmosferici","Buon comportamento alle variazioni di temperatura","Lunga durata nel tempo","Teli di grandi dimensioni, meno giunzioni","Adatto sia a coperture sia a laghi e bacini artificiali"]
+  },
+  {
+    id:"tpo", tag:"Impermeabilizzazione", name:"Membrane TPO/FPO",
+    lede:"Membrane sintetiche a base di poliolefine termoplastiche, saldate ad aria calda senza fiamma libera.",
+    text:[
+      "Le membrane TPO/FPO sono sistemi <a href=\"impermeabilizzazioni.html\">impermeabilizzanti</a> sintetici a base di poliolefine termoplastiche, studiati principalmente per la realizzazione e il rifacimento di coperture piane e superfici esposte agli agenti atmosferici.",
+      "I teli vengono posati sulla superficie e uniti mediante saldatura ad aria calda, realizzando giunzioni continue senza l'impiego di fiamme libere.",
+      "La resistenza ai raggi UV e agli agenti atmosferici, unita alla leggerezza e alla versatilità del sistema, rende queste membrane particolarmente indicate sia per nuove costruzioni sia per interventi di riqualificazione di impermeabilizzazioni esistenti.",
+      "Il sistema può essere applicato con differenti modalità di posa e integrato nelle stratigrafie di copertura in funzione delle caratteristiche del supporto, dell'isolamento e della destinazione d'uso della superficie."
+    ],
+    benefits:["Elevata resistenza agli agenti atmosferici e ai raggi UV","Giunzioni saldate ad aria calda","Posa senza utilizzo di fiamma libera","Elevata flessibilità e stabilità","Peso contenuto","Adatta a nuove realizzazioni e rifacimenti","Indicata per coperture piane e grandi superfici"]
   },
   {
     id:"isolanti", tag:"Isolamento", name:"Isolanti",
@@ -168,6 +190,10 @@ window.ARPAL_GALLERIES = {
 };
 
 window.ARPAL_GALLERIES_EXTRA = {
+  lineavita:[
+    {src:"assets/img/lineavita/lineavita-5.jpg", alt:"Linea vita in cavo d'acciaio con tenditore su copertura aggraffata"},
+    {src:"assets/img/lineavita/lineavita-6.jpg", alt:"Dettaglio del tenditore a molla di una linea vita su copertura metallica"}
+  ],
   coperture:[
     {src:"assets/img/coperture/cornicione-alluminio-1.jpg", alt:"Cornicione di copertura in alluminio nero opaco"},
     {src:"assets/img/coperture/cornicione-alluminio-2.jpg", alt:"Dettaglio cornicione in alluminio nero opaco"},
@@ -193,7 +219,6 @@ window.ARPAL_GALLERIES_EXTRA = {
     {src:"assets/img/facciate/facciata-parete-ventilata-4.jpg", alt:"Facciata a parete ventilata"},
     {src:"assets/img/facciate/facciata-parete-ventilata-5.jpg", alt:"Facciata a parete ventilata"},
     {src:"assets/img/facciate/facciata-involucro-bronzato-2.jpg", alt:"Involucro bronzato"},
-    {src:"assets/img/facciate/facciata-hpl-2.jpg", alt:"Facciata in HPL"},
     {src:"assets/img/facciate/facciata-hpl-3.jpg", alt:"Facciata in HPL"},
     {src:"assets/img/facciate/facciata-acciaio-specchio-2.jpg", alt:"Facciata con acciaio a specchio"},
     {src:"assets/img/facciate/facciata-acciaio-specchio-3.jpg", alt:"Facciata con acciaio a specchio"},
