@@ -140,7 +140,8 @@
     let idx = 0;
     setInterval(()=>{
       heroSlides[idx].classList.remove("is-active");
-      idx = (idx + 1) % heroSlides.length;
+      do { idx = (idx + 1) % heroSlides.length; }
+      while(getComputedStyle(heroSlides[idx]).display === "none");
       heroSlides[idx].classList.add("is-active");
     }, 5200);
   }
@@ -358,7 +359,7 @@
             scrollTrigger:{ trigger:img.closest(".js-parallax-wrap") || img, start:"top bottom", end:"bottom top", scrub:true }
           });
         });
-        gsap.to(".hero-slide.is-active img, .hero-slide img", {
+        gsap.to(".hero-slide .hero-main", {
           scale:1,
           scrollTrigger:{ trigger:".hero", start:"top top", end:"bottom top", scrub:true }
         });
