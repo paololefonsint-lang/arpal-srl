@@ -135,15 +135,25 @@
   });
 
   /* ---------------------------------------------------- hero slideshow -- */
-  const heroSlides = document.querySelectorAll(".hero-slide");
+  const heroSlides = [...document.querySelectorAll(".hero-slide")];
   if(heroSlides.length > 1){
-    let idx = 0;
-    setInterval(()=>{
+    const visible = s => getComputedStyle(s).display !== "none";
+    let idx = Math.max(0, heroSlides.findIndex(s => s.classList.contains("is-active")));
+    const show = i => {
       heroSlides[idx].classList.remove("is-active");
-      do { idx = (idx + 1) % heroSlides.length; }
-      while(getComputedStyle(heroSlides[idx]).display === "none");
+      idx = i;
       heroSlides[idx].classList.add("is-active");
-    }, 5200);
+    };
+    const next = () => {
+      let i = idx;
+      do { i = (i + 1) % heroSlides.length; } while(!visible(heroSlides[i]) && i !== idx);
+      return i;
+    };
+    // la slide attiva può essere nascosta per questo formato (solo desktop / solo mobile)
+    const ensureVisible = () => { if(!visible(heroSlides[idx])) show(next()); };
+    ensureVisible();
+    window.addEventListener("resize", ensureVisible);
+    setInterval(() => show(next()), 5200);
   }
 
   /* ---------------------------------------------------- render galleries */
