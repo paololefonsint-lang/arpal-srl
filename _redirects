@@ -30,6 +30,7 @@
 /copertura-chiesa-monta/ /coperture 301
 /impermeabilizzazione-rampa/ /impermeabilizzazioni 301
 /copertura-nelle-langhe/ /coperture 301
-/rivestimento-nelle-langhe/ /rivestimenti-metallici 301/category/rivestimenti-metallici/* /rivestimenti-metallici 301
+/rivestimento-nelle-langhe/ /rivestimenti-metallici 301
+/category/rivestimenti-metallici/* /rivestimenti-metallici 301
 /category/impermeabilizzazioni/* /impermeabilizzazioni 301
 /page/* / 301
