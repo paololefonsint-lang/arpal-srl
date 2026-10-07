@@ -5,9 +5,9 @@
 window.ARPAL_TIMELINE = [
   { year:"1979", title:"Nasce ARPAL", text:"Nasce ARPAL, dando inizio a un percorso dedicato alle tecnologie, ai materiali e alle lavorazioni per il settore edilizio." },
   { year:"1981", title:"ARPAL diventa S.r.l.", text:"ARPAL si trasforma in società a responsabilità limitata. Con la famiglia Arduino alla guida dell'azienda prende forma una nuova fase di sviluppo e consolidamento." },
-  { year:"1984", title:"I primi lavori di lattoneria", text:"ARPAL amplia il proprio campo di attività iniziando a eseguire i primi lavori di lattoneria semplice. Un nuovo ambito operativo che, negli anni, diventerà una delle competenze distintive dell'azienda." },
+  { year:"1984", title:"I primi lavori di lattoneria", text:"ARPAL amplia il proprio campo di attività. Alle continue innovazioni del settore delle impermeabilizzazioni si affiancano i primi lavori di lattoneria semplice. Un nuovo ambito operativo che, negli anni, diventerà una delle competenze distintive dell'azienda." },
   { year:"1996", title:"L'apertura di Poirino", text:"Con l'apertura della sede di Poirino, ARPAL rafforza la propria struttura operativa e consolida la presenza sul territorio piemontese." },
-  { year:"2001", title:"Dalla posa a un'attività edilizia più completa", text:"ARPAL amplia ulteriormente il proprio raggio d'azione: all'installazione e alla posa si affiancano nuove competenze nella produzione, nelle costruzioni e nelle ristrutturazioni, consolidando il ruolo dell'azienda nel settore edilizio." },
+  { year:"2001", title:"Dalla posa a un'attività edilizia più completa", text:"ARPAL amplia ulteriormente il proprio raggio d'azione: all'installazione e alla posa si affiancano nuove competenze nei rivestimenti, consolidando il ruolo dell'azienda nel settore edilizio." },
   { year:"2018", title:"La lattoneria si evolve", text:"L'esperienza maturata nel tempo nella lattoneria si evolve verso lavorazioni sempre più specialistiche. ARPAL amplia la propria offerta con soluzioni dedicate a coperture, facciate e rivestimenti metallici, sviluppando nuove competenze tecniche e realizzative." },
   { year:"2021", title:"Il passaggio generazionale", text:"La seconda generazione della famiglia Arduino assume la guida di Arpal: il passaggio generazionale rafforza la continuità familiare dell'impresa, che prosegue il percorso iniziato oltre quarant'anni prima." },
   { year:"2024", title:"Cresce la struttura aziendale", text:"Negli ultimi anni ARPAL continua a investire nelle proprie competenze e nella crescita della struttura aziendale, ampliando il proprio parco veicolare." },
@@ -60,15 +60,15 @@ window.ARPAL_MATERIALS = [
     benefits:["Lunghissima durata se correttamente progettato e posato","Formazione naturale di una patina superficiale protettiva","Ridotte esigenze di manutenzione","Elevata lavorabilità","Adatto a coperture, facciate e opere di lattoneria","Ideale anche per geometrie architettoniche complesse","Aspetto naturale ed elegante","Materiale altamente riciclabile"]
   },
   {
-    id:"hpl", tag:"Sistemi", name:"Pannelli HPL",
-    lede:"Laminati compatti ad alta pressione: durabilità e libertà progettuale per facciate ventilate e rivestimenti esterni.",
+    id:"acciaio-inox", tag:"Metalli", name:"Acciaio inox",
+    lede:"Resistenza, durabilità ed elevato valore estetico per rivestimenti e dettagli architettonici.",
     text:[
-      "I pannelli HPL (High Pressure Laminate) sono laminati compatti ad alta pressione utilizzati per il rivestimento di <a href=\"facciate.html\">facciate</a> e superfici esterne.",
-      "La loro struttura compatta garantisce elevata resistenza agli agenti atmosferici, agli urti e all'usura, rendendoli particolarmente adatti alle facciate ventilate e agli interventi di riqualificazione dell'involucro edilizio.",
-      "Disponibili in un'ampia gamma di colori, texture e finiture — dalle superfici uniformi agli effetti legno, pietra o materici — permettono di coniugare durabilità e libertà progettuale.",
-      "La facilità di lavorazione consente inoltre di realizzare pannellature di differenti formati e geometrie, adattando il <a href=\"rivestimenti-metallici.html\">rivestimento</a> alle caratteristiche architettoniche dell'edificio."
+      "L'acciaio inox combina resistenza, durabilità ed elevato valore estetico, caratteristiche che ne fanno un materiale particolarmente indicato per <a href=\"rivestimenti-metallici.html\">rivestimenti</a> e dettagli architettonici destinati a mantenere le proprie prestazioni nel tempo.",
+      "La presenza di elementi di lega, in particolare il cromo, consente all'acciaio inox di sviluppare una superficie naturalmente resistente alla corrosione. Per questo motivo può essere utilizzato anche in applicazioni esterne particolarmente esposte agli agenti atmosferici.",
+      "Un altro elemento distintivo è l'ampia possibilità di personalizzazione estetica: superfici lucide, satinate, opache, spazzolate o strutturate permettono di ottenere effetti molto differenti.",
+      "La combinazione tra resistenza meccanica e qualità estetica consente di realizzare facciate, portali, rivestimenti e dettagli caratterizzati da un'immagine contemporanea e particolarmente elegante."
     ],
-    benefits:["Elevata resistenza agli agenti atmosferici","Resistenza agli urti e all'usura","Stabilità delle finiture e dei colori","Ampia scelta di colori, texture e superfici","Facilità di manutenzione","Ideale per facciate ventilate e rivestimenti esterni"]
+    benefits:["Elevata resistenza alla corrosione","Grande durabilità nel tempo","Elevata resistenza meccanica","Ridotte esigenze di manutenzione","Ampia disponibilità di finiture superficiali","Estetica moderna e prestigiosa","Adatto ad applicazioni interne ed esterne","Materiale completamente riciclabile"]
   },
   {
     id:"corten", tag:"Metalli", name:"Corten",
@@ -83,15 +83,15 @@ window.ARPAL_MATERIALS = [
     benefits:["Estetica unica e fortemente riconoscibile","Formazione naturale di una patina protettiva","Colore e superficie che evolvono nel tempo","Elevata resistenza meccanica","Buona resistenza alla corrosione atmosferica","Possibilità di utilizzo senza verniciatura in molte applicazioni","Ideale per facciate e rivestimenti contemporanei","Si integra bene con vetro, legno, calcestruzzo e pietra"]
   },
   {
-    id:"acciaio-inox", tag:"Metalli", name:"Acciaio inox",
-    lede:"Resistenza, durabilità ed elevato valore estetico per rivestimenti e dettagli architettonici.",
+    id:"hpl", tag:"Sistemi", name:"Pannelli HPL",
+    lede:"Laminati compatti ad alta pressione: durabilità e libertà progettuale per facciate ventilate e rivestimenti esterni.",
     text:[
-      "L'acciaio inox combina resistenza, durabilità ed elevato valore estetico, caratteristiche che ne fanno un materiale particolarmente indicato per <a href=\"rivestimenti-metallici.html\">rivestimenti</a> e dettagli architettonici destinati a mantenere le proprie prestazioni nel tempo.",
-      "La presenza di elementi di lega, in particolare il cromo, consente all'acciaio inox di sviluppare una superficie naturalmente resistente alla corrosione. Per questo motivo può essere utilizzato anche in applicazioni esterne particolarmente esposte agli agenti atmosferici.",
-      "Un altro elemento distintivo è l'ampia possibilità di personalizzazione estetica: superfici lucide, satinate, opache, spazzolate o strutturate permettono di ottenere effetti molto differenti.",
-      "La combinazione tra resistenza meccanica e qualità estetica consente di realizzare facciate, portali, rivestimenti e dettagli caratterizzati da un'immagine contemporanea e particolarmente elegante."
+      "I pannelli HPL (High Pressure Laminate) sono laminati compatti ad alta pressione utilizzati per il rivestimento di <a href=\"facciate.html\">facciate</a> e superfici esterne.",
+      "La loro struttura compatta garantisce elevata resistenza agli agenti atmosferici, agli urti e all'usura, rendendoli particolarmente adatti alle facciate ventilate e agli interventi di riqualificazione dell'involucro edilizio.",
+      "Disponibili in un'ampia gamma di colori, texture e finiture — dalle superfici uniformi agli effetti legno, pietra o materici — permettono di coniugare durabilità e libertà progettuale.",
+      "La facilità di lavorazione consente inoltre di realizzare pannellature di differenti formati e geometrie, adattando il <a href=\"rivestimenti-metallici.html\">rivestimento</a> alle caratteristiche architettoniche dell'edificio."
     ],
-    benefits:["Elevata resistenza alla corrosione","Grande durabilità nel tempo","Elevata resistenza meccanica","Ridotte esigenze di manutenzione","Ampia disponibilità di finiture superficiali","Estetica moderna e prestigiosa","Adatto ad applicazioni interne ed esterne","Materiale completamente riciclabile"]
+    benefits:["Elevata resistenza agli agenti atmosferici","Resistenza agli urti e all'usura","Stabilità delle finiture e dei colori","Ampia scelta di colori, texture e superfici","Facilità di manutenzione","Ideale per facciate ventilate e rivestimenti esterni"]
   },
   {
     id:"pannelli-compositi", tag:"Sistemi", name:"Pannelli compositi",
