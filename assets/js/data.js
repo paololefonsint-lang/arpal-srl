@@ -273,3 +273,289 @@ window.ARPAL_GALLERIES_EXTRA = {
     {src:"assets/img/impermeabilizzazioni/impermeabilizzazione-muri-2.jpg", alt:"Impermeabilizzazione muri"}
   ]
 };
+
+/* Archivio lavori: cat = impermeabilizzazioni | coperture | facciate */
+window.ARPAL_PROJECT_CATEGORIES = {
+  coperture:"Coperture e lattoneria",
+  facciate:"Facciate e rivestimenti",
+  impermeabilizzazioni:"Impermeabilizzazioni"
+};
+
+window.ARPAL_PROJECTS = [
+  {
+    cat:"coperture", title:"Copertura in alluminio grigio chiaro ad aggraffatura semplice", place:"Torino (TO)",
+    text:"Copertura in alluminio grigio chiaro con sistema ad aggraffatura semplice, ai piedi della Mole Antonelliana.",
+    photos:[
+      {src:"assets/img/coperture/copertura-alluminio-grigio-1.jpg", alt:"Copertura in alluminio grigio chiaro ai piedi della Mole Antonelliana a Torino"},
+      {src:"assets/img/coperture/copertura-alluminio-grigio-2.jpg", alt:"Copertura in alluminio grigio chiaro ad aggraffatura semplice a Torino, dettaglio"},
+      {src:"assets/img/coperture/copertura-alluminio-grigio-3.jpg", alt:"Copertura in alluminio grigio chiaro a Torino, vista dall'alto"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Copertura in alluminio grigio chiaro a doppia aggraffatura", place:"Torino (TO)",
+    text:"Manto di copertura in lastre di alluminio grigio chiaro, posate con sistema a doppia aggraffatura.",
+    photos:[
+      {src:"assets/img/coperture/copertura-alluminio-grigio-4.jpg", alt:"Copertura in alluminio grigio chiaro a doppia aggraffatura a Torino"},
+      {src:"assets/img/coperture/copertura-alluminio-grigio-5.jpg", alt:"Copertura in alluminio grigio chiaro a Torino, dettaglio del lucernario"},
+      {src:"assets/img/coperture/copertura-alluminio-grigio-6.jpg", alt:"Copertura in alluminio grigio chiaro a doppia aggraffatura a Torino, vista della falda"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Copertura in alluminio pre-patinato su più falde", place:"Montà (CN)",
+    text:"Copertura in alluminio pre-patinato a doppia aggraffatura, su più falde a diversa pendenza.",
+    photos:[
+      {src:"assets/img/coperture/copertura-alluminio-patinato-1.jpg", alt:"Copertura in alluminio pre-patinato a doppia aggraffatura a Montà"},
+      {src:"assets/img/coperture/copertura-alluminio-patinato-2.jpg", alt:"Copertura in alluminio pre-patinato su più falde a Montà"},
+      {src:"assets/img/coperture/copertura-alluminio-patinato-3.jpg", alt:"Copertura in alluminio pre-patinato a Montà, dettaglio della gronda"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Copertura in rame a doppia aggraffatura", place:"Trezzo Tinella (CN)",
+    text:"Manto di copertura in rame realizzato con sistema a doppia aggraffatura.",
+    photos:[
+      {src:"assets/img/coperture/copertura-rame-1.jpg", alt:"Copertura in rame a doppia aggraffatura a Trezzo Tinella"},
+      {src:"assets/img/coperture/copertura-rame-2.jpg", alt:"Copertura in rame a Trezzo Tinella, dettaglio del lucernario"},
+      {src:"assets/img/coperture/copertura-rame-3.jpg", alt:"Copertura in rame a doppia aggraffatura a Trezzo Tinella, vista della falda"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Copertura in alluminio antracite in montagna", place:"Cervinia (AO)",
+    text:"Copertura in alluminio antracite con sistema a doppia aggraffatura, in un contesto alpino.",
+    photos:[
+      {src:"assets/img/coperture/copertura-antracite-1.jpg", alt:"Copertura in alluminio antracite a doppia aggraffatura a Cervinia"},
+      {src:"assets/img/coperture/copertura-antracite-2.jpg", alt:"Copertura in alluminio antracite a Cervinia, vista d'insieme"},
+      {src:"assets/img/coperture/copertura-antracite-3.jpg", alt:"Copertura in alluminio antracite a Cervinia con le montagne sullo sfondo"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Abbaini rivestiti in zinco-titanio quartz", place:"",
+    text:"Rivestimento di abbaini in zinco-titanio quartz, con sistema a doppia aggraffatura.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-1.jpg", alt:"Abbaini rivestiti in zinco-titanio quartz a doppia aggraffatura"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-2.jpg", alt:"Abbaino in zinco-titanio quartz, dettaglio della lattoneria"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-3.jpg", alt:"Abbaini in zinco-titanio quartz su copertura"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Gazebo rivestito in alluminio Genius antracite", place:"Busca (CN)",
+    text:"Rivestimento di un gazebo in alluminio Genius antracite, con lastre disposte a raggiera.",
+    photos:[
+      {src:"assets/img/coperture/gazebo-alluminio-1.jpg", alt:"Gazebo rivestito in alluminio Genius antracite a Busca"},
+      {src:"assets/img/coperture/gazebo-alluminio-2.jpg", alt:"Copertura del gazebo in alluminio antracite a Busca, vista dall'alto"},
+      {src:"assets/img/coperture/gazebo-alluminio-3.jpg", alt:"Gazebo in alluminio Genius antracite a Busca, dettaglio del colmo"},
+      {src:"assets/img/coperture/gazebo-alluminio-4.jpg", alt:"Struttura del gazebo a Busca vista dal basso"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Copertura in rame con falde su misura", place:"Trezzo Tinella (CN)",
+    text:"Copertura in rame a doppia aggraffatura, con falde di più misure realizzate secondo progetto.",
+    photos:[
+      {src:"assets/img/coperture/copertura-rame-falde-1.jpg", alt:"Copertura in rame a doppia aggraffatura con falde di più misure a Trezzo Tinella"},
+      {src:"assets/img/coperture/copertura-rame-falde-2.jpg", alt:"Copertura in rame a Trezzo Tinella, dettaglio delle lastre aggraffate"},
+      {src:"assets/img/coperture/copertura-rame-falde-3.jpg", alt:"Falde in rame su misura a Trezzo Tinella durante la posa"}
+    ]
+  },
+  {
+    cat:"coperture", title:"Cornicione in alluminio nero opaco", place:"Alba (CN)",
+    text:"Rivestimento di cornicione in alluminio nero opaco, con intradosso effetto legno.",
+    photos:[
+      {src:"assets/img/coperture/cornicione-alluminio-1.jpg", alt:"Cornicione rivestito in alluminio nero opaco ad Alba"},
+      {src:"assets/img/coperture/cornicione-alluminio-2.jpg", alt:"Cornicione in alluminio nero opaco con intradosso effetto legno ad Alba"},
+      {src:"assets/img/coperture/cornicione-alluminio-3.jpg", alt:"Cornicione in alluminio nero opaco ad Alba, vista d'angolo"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Parete ventilata in alluminio aggraffato", place:"Alba (CN)",
+    text:"Facciata ventilata in alluminio aggraffato, che migliora la circolazione dell'aria e riduce i consumi energetici dell'edificio.",
+    photos:[
+      {src:"assets/img/facciate/facciata-parete-ventilata-1.jpg", alt:"Parete ventilata in alluminio aggraffato ad Alba"},
+      {src:"assets/img/facciate/facciata-parete-ventilata-2.jpg", alt:"Parete ventilata in alluminio aggraffato ad Alba, dettaglio"},
+      {src:"assets/img/facciate/facciata-parete-ventilata-3.jpg", alt:"Parete ventilata in alluminio aggraffato ad Alba, vista laterale"},
+      {src:"assets/img/facciate/facciata-parete-ventilata-4.jpg", alt:"Parete ventilata in alluminio aggraffato ad Alba, vista d'insieme"},
+      {src:"assets/img/facciate/facciata-parete-ventilata-5.jpg", alt:"Parete ventilata in alluminio aggraffato ad Alba, particolare"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Involucro continuo in alluminio bronzato", place:"Margarita (CN)",
+    text:"Involucro continuo in alluminio bronzato con doppia aggraffatura e aggraffatura semplice, con lastre a passo alternato.",
+    photos:[
+      {src:"assets/img/facciate/facciata-involucro-bronzato-1.jpg", alt:"Involucro continuo in alluminio bronzato a Margarita"},
+      {src:"assets/img/facciate/facciata-involucro-bronzato-2.jpg", alt:"Involucro in alluminio bronzato a Margarita, dettaglio delle lastre"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Facciata in HPL effetto Corten", place:"Torino (TO)",
+    text:"Facciata in pannelli HPL con finitura effetto Corten, su sottostruttura a doghe in alluminio modello «X».",
+    photos:[
+      {src:"assets/img/facciate/facciata-hpl-1.jpg", alt:"Facciata in pannelli HPL effetto Corten a Torino"},
+      {src:"assets/img/facciate/facciata-hpl-3.jpg", alt:"Facciata in HPL effetto Corten a Torino, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"«Parete di ghiaccio» in acciaio inox", place:"Cortina d'Ampezzo (BL)",
+    text:"Rivestimento di facciata in acciaio inox opaco e a specchio, con aggraffatura angolare.",
+    photos:[
+      {src:"assets/img/facciate/facciata-acciaio-specchio-1.jpg", alt:"Facciata in acciaio inox opaco e a specchio a Cortina d'Ampezzo"},
+      {src:"assets/img/facciate/facciata-acciaio-specchio-2.jpg", alt:"Parete di ghiaccio in acciaio inox a Cortina d'Ampezzo, dettaglio"},
+      {src:"assets/img/facciate/facciata-acciaio-specchio-3.jpg", alt:"Rivestimento in acciaio inox con aggraffatura angolare a Cortina d'Ampezzo"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Rivestimento completo in zinco-titanio", place:"Pinerolo (TO)",
+    text:"Rivestimento completo dell'edificio in zinco-titanio.",
+    photos:[
+      {src:"assets/img/facciate/facciata-zinco-titanio-1.jpg", alt:"Edificio con rivestimento completo in zinco-titanio a Pinerolo"},
+      {src:"assets/img/facciate/facciata-zinco-titanio-2.jpg", alt:"Rivestimento in zinco-titanio a Pinerolo, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Facciata in alluminio antracite", place:"Salmour (CN)",
+    text:"Facciata in alluminio antracite con sistemi a doppia aggraffatura e aggraffatura semplice.",
+    photos:[
+      {src:"assets/img/facciate/facciata-alluminio-1.jpg", alt:"Facciata in alluminio antracite a doppia aggraffatura a Salmour"},
+      {src:"assets/img/facciate/facciata-alluminio-2.jpg", alt:"Facciata in alluminio antracite ad aggraffatura semplice a Salmour, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Ingresso di cantina in zinco-titanio", place:"Treiso (CN)",
+    text:"Rivestimento dell'ingresso di una cantina in zinco-titanio.",
+    photos:[
+      {src:"assets/img/facciate/facciata-ingresso-zinco-1.jpg", alt:"Ingresso di una cantina rivestito in zinco-titanio a Treiso"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Pensilina in pannelli compositi", place:"Trezzo Tinella (CN)",
+    text:"Rivestimento di una pensilina realizzato con pannelli compositi.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/rivestimento-pensilina-1.jpg", alt:"Pensilina rivestita in pannelli compositi a Trezzo Tinella"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-pensilina-2.jpg", alt:"Pensilina in pannelli compositi a Trezzo Tinella, vista d'insieme"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-pensilina-3.jpg", alt:"Pensilina in pannelli compositi a Trezzo Tinella, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Facciata e soffitto in pannelli compositi", place:"Trezzo Tinella (CN)",
+    text:"Rivestimento di facciata e soffitto realizzato con pannelli compositi.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/rivestimento-alluminio-composito-1.jpg", alt:"Facciata rivestita in pannelli compositi a Trezzo Tinella"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-alluminio-composito-2.jpg", alt:"Soffitto rivestito in pannelli compositi a Trezzo Tinella"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-alluminio-composito-3.jpg", alt:"Rivestimento in pannelli compositi a Trezzo Tinella, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Facciata in alluminio verde maculato e marrone", place:"Monforte d'Alba (CN)",
+    text:"Rivestimento di facciata in alluminio verde maculato e marrone, con sistema ad aggraffatura semplice.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/rivestimento-verde-maculato-1.jpg", alt:"Facciata in alluminio verde maculato e marrone a Monforte d'Alba"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-verde-maculato-2.jpg", alt:"Rivestimento in alluminio verde maculato ad aggraffatura semplice a Monforte d'Alba"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Rivestimento in RHEINZINK pre-patinato", place:"Clavesana (CN)",
+    text:"Rivestimento in RHEINZINK pre-patinato grigio scuro, con sistema ad aggraffatura angolare.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/rivestimento-rheinzink-1.jpg", alt:"Rivestimento in RHEINZINK pre-patinato grigio scuro a Clavesana"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-rheinzink-2.jpg", alt:"Rivestimento in RHEINZINK ad aggraffatura angolare a Clavesana"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-rheinzink-3.jpg", alt:"Rivestimento in RHEINZINK pre-patinato a Clavesana, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Bow window rivestito in alluminio", place:"Trezzo Tinella (CN)",
+    text:"Rivestimento di un bow window con lastre di alluminio verniciate a polvere.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-1.jpg", alt:"Bow window rivestito con lastre di alluminio a Trezzo Tinella"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-2.jpg", alt:"Bow window in alluminio verniciato a polvere a Trezzo Tinella"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-bow-window-3.jpg", alt:"Rivestimento in alluminio di un bow window a Trezzo Tinella, dettaglio"}
+    ]
+  },
+  {
+    cat:"facciate", title:"Portale in ferro effetto Corten", place:"Cerretto Langhe (CN)",
+    text:"Portale in ferro verniciato a polvere con finitura effetto Corten.",
+    photos:[
+      {src:"assets/img/rivestimenti-metallici/portale-corten-1.jpg", alt:"Portale in ferro verniciato a polvere effetto Corten a Cerretto Langhe"},
+      {src:"assets/img/rivestimenti-metallici/portale-corten-2.jpg", alt:"Portale d'ingresso effetto Corten a Cerretto Langhe"},
+      {src:"assets/img/rivestimenti-metallici/portale-corten-3.jpg", alt:"Portale in ferro effetto Corten a Cerretto Langhe, dettaglio"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Guaina ardesiata testa di moro", place:"Serralunga d'Alba (CN)",
+    text:"Impermeabilizzazione con guaina bituminosa ardesiata nella variante testa di moro.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/guaina-ardesiata-1.jpg", alt:"Guaina bituminosa ardesiata testa di moro a Serralunga d'Alba"},
+      {src:"assets/img/impermeabilizzazioni/guaina-ardesiata-2.jpg", alt:"Impermeabilizzazione con guaina ardesiata testa di moro a Serralunga d'Alba, dettaglio"},
+      {src:"assets/img/impermeabilizzazioni/guaina-ardesiata-3.jpg", alt:"Guaina ardesiata testa di moro a Serralunga d'Alba, vista della superficie"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Guaina bituminosa ceramizzata", place:"San Sicario (TO)",
+    text:"Impermeabilizzazione con guaina bituminosa ceramizzata.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/guaina-bituminosa-1.jpg", alt:"Impermeabilizzazione con guaina bituminosa ceramizzata a San Sicario"},
+      {src:"assets/img/impermeabilizzazioni/guaina-bituminosa-2.jpg", alt:"Guaina bituminosa ceramizzata a San Sicario con le montagne sullo sfondo"},
+      {src:"assets/img/impermeabilizzazioni/dettaglio-2.jpg", alt:"Rotolo di guaina bituminosa ceramizzata in cantiere a San Sicario"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Muretti in guaina ceramizzata nera", place:"Alba (CN)",
+    text:"Impermeabilizzazione di muretti con guaina bituminosa ceramizzata nera.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/guaina-nera-1.jpg", alt:"Muretti impermeabilizzati con guaina bituminosa ceramizzata nera ad Alba"},
+      {src:"assets/img/impermeabilizzazioni/guaina-nera-2.jpg", alt:"Guaina ceramizzata nera sui muretti di un ingresso ad Alba"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Terrazzo con correzione delle pendenze", place:"Orbassano (TO)",
+    text:"Correzione delle pendenze con pannelli isolanti e impermeabilizzazione con doppia guaina bituminosa ardesiata.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-1.jpg", alt:"Posa di pannelli isolanti per la correzione delle pendenze di un terrazzo a Orbassano"},
+      {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-2.jpg", alt:"Terrazzo a Orbassano con pannelli isolanti prima dell'impermeabilizzazione"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Guaina bituminosa per asfalto colato", place:"Torino (TO)",
+    text:"Posa di guaina bituminosa idonea a ricevere l'asfalto colato.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/guaina-asfalto-1.jpg", alt:"Posa di guaina bituminosa per asfalto colato a Torino"},
+      {src:"assets/img/impermeabilizzazioni/guaina-asfalto-2.jpg", alt:"Guaina bituminosa per asfalto colato a Torino, dettaglio della posa"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Copertura in guaina bituminosa", place:"Torino (TO)",
+    text:"Rivestimento di copertura con guaina bituminosa.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/dettaglio-1.jpg", alt:"Copertura in guaina bituminosa a Torino con la Mole Antonelliana sullo sfondo"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Impermeabilizzazione di copertura con guaina bituminosa", place:"",
+    text:"Rivestimento di copertura piana con guaina bituminosa.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/copertura-1.jpg", alt:"Copertura piana impermeabilizzata con guaina bituminosa al tramonto"},
+      {src:"assets/img/impermeabilizzazioni/copertura-2.jpg", alt:"Copertura piana in guaina bituminosa, vista d'insieme"},
+      {src:"assets/img/impermeabilizzazioni/copertura-3.jpg", alt:"Copertura piana in guaina bituminosa, vista verso le montagne"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Copertura piana in guaina bituminosa", place:"Alba (CN)",
+    text:"Impermeabilizzazione di una copertura piana con guaina bituminosa.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/copertura-piana-1.jpg", alt:"Copertura piana impermeabilizzata con guaina bituminosa ad Alba"},
+      {src:"assets/img/impermeabilizzazioni/copertura-piana-2.jpg", alt:"Guaina bituminosa su copertura piana ad Alba, vista d'insieme"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Pannelli isolanti e guaina bituminosa", place:"Alba (CN)",
+    text:"Posa di pannelli isolanti e impermeabilizzazione con guaina bituminosa.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-3.jpg", alt:"Posa di pannelli isolanti sotto la guaina bituminosa ad Alba"},
+      {src:"assets/img/impermeabilizzazioni/pannelli-isolanti-4.jpg", alt:"Copertura isolata e impermeabilizzata con guaina bituminosa ad Alba"}
+    ]
+  },
+  {
+    cat:"impermeabilizzazioni", title:"Impermeabilizzazione di muri controterra", place:"",
+    text:"Impermeabilizzazione di muri controterra con guaina bituminosa, contro umidità e infiltrazioni.",
+    photos:[
+      {src:"assets/img/impermeabilizzazioni/impermeabilizzazione-muri-1.jpg", alt:"Muro controterra impermeabilizzato con guaina bituminosa"},
+      {src:"assets/img/impermeabilizzazioni/impermeabilizzazione-muri-2.jpg", alt:"Guaina bituminosa su muro controterra, dettaglio"}
+    ]
+  }
+];

@@ -190,6 +190,47 @@
   }
   renderGalleries();
 
+  /* ---------------------------------------------------- lavori realizzati */
+  const projectsEl = document.querySelector("[data-projects]");
+  const projects = window.ARPAL_PROJECTS || [];
+  if(projectsEl && projects.length){
+    const cats = window.ARPAL_PROJECT_CATEGORIES || {};
+    projectsEl.innerHTML = projects.map((p, i)=>`
+      <article class="project-card reveal" data-cat="${p.cat}">
+        <button type="button" class="project-media" data-project="${i}" aria-label="Apri le foto: ${p.title}">
+          ${pictureHTML(p.photos[0].src, p.photos[0].alt, 'loading="lazy" decoding="async"')}
+          <span class="project-count">${p.photos.length} foto</span>
+        </button>
+        <div class="project-body">
+          <span class="project-cat">${cats[p.cat] || ""}</span>
+          <h3>${p.title}</h3>
+          ${p.place ? `<p class="project-place">${p.place}</p>` : ""}
+          <p class="project-text">${p.text}</p>
+        </div>
+      </article>`).join("");
+
+    const filterEl = document.querySelector("[data-projects-filter]");
+    const used = Object.keys(cats).filter(c => projects.some(p => p.cat === c));
+    if(filterEl && used.length > 1){
+      filterEl.innerHTML = [`<button type="button" class="is-active" data-filter="all">Tutti</button>`]
+        .concat(used.map(c => `<button type="button" data-filter="${c}">${cats[c]}</button>`)).join("");
+      filterEl.addEventListener("click", (e)=>{
+        const b = e.target.closest("[data-filter]");
+        if(!b) return;
+        filterEl.querySelectorAll("[data-filter]").forEach(x => x.classList.toggle("is-active", x === b));
+        const f = b.getAttribute("data-filter");
+        projectsEl.querySelectorAll(".project-card").forEach(card=>{
+          card.hidden = f !== "all" && card.getAttribute("data-cat") !== f;
+        });
+        if(window.ScrollTrigger) ScrollTrigger.refresh();
+      });
+      const wantedCat = new URLSearchParams(location.search).get("cat");
+      filterEl.querySelector(`[data-filter="${wantedCat}"]`)?.click();
+    } else if(filterEl){
+      filterEl.remove();
+    }
+  }
+
   /* ---------------------------------------------------- lightbox -------- */
   const lightbox = document.querySelector(".lightbox");
   let lbItems = [], lbIndex = 0;
@@ -237,6 +278,12 @@
       const items = galleryItemsFor(key);
       if(!items) return;
       openLightbox(items, Number(btn.getAttribute("data-index")));
+      return;
+    }
+    const projBtn = e.target.closest("[data-project]");
+    if(projBtn){
+      const p = window.ARPAL_PROJECTS?.[Number(projBtn.getAttribute("data-project"))];
+      if(p) openLightbox(p.photos, 0);
       return;
     }
     const allBtn = e.target.closest("[data-gallery-all]");

@@ -42,31 +42,96 @@
       "sameAs": [
         "https://instagram.com/arpal__",
         "https://www.facebook.com/share/16C5zdrzNNf/?mibextid=wwXIfr"
+      ],
+      "knowsAbout": [
+        "Impermeabilizzazioni",
+        "Guaine bituminose",
+        "Membrane TPO/FPO",
+        "Membrane EPDM",
+        "Coperture metalliche aggraffate",
+        "Lattoneria",
+        "Facciate ventilate",
+        "Rivestimenti metallici",
+        "Linea vita",
+        "Laghi artificiali"
+      ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Torino"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Cuneo"
+        },
+        {
+          "@type": "Place",
+          "name": "Langhe"
+        },
+        {
+          "@type": "Place",
+          "name": "Roero"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Valle d'Aosta"
+        }
       ]
     },
     {
       "@type": "RoofingContractor",
       "@id": "https://www.arpal-srl.it/#sede-legale",
       "name": "Arpal Srl — Sede legale",
-      "branchOf": { "@id": "https://www.arpal-srl.it/#organization" },
+      "branchOf": {
+        "@id": "https://www.arpal-srl.it/#organization"
+      },
       "url": "https://www.arpal-srl.it/",
       "image": "https://www.arpal-srl.it/assets/img/og/home.jpg",
       "telephone": "+39 011 1873 8210",
       "email": "info@arpal-srl.it",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Via Rio Verde 16",
+        "streetAddress": "Via Rio Verde",
         "postalCode": "12046",
         "addressLocality": "Montà",
         "addressRegion": "CN",
         "addressCountry": "IT"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Torino"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Cuneo"
+        },
+        {
+          "@type": "Place",
+          "name": "Langhe"
+        },
+        {
+          "@type": "Place",
+          "name": "Roero"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Valle d'Aosta"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.821798,
+        "longitude": 7.943528
       }
     },
     {
       "@type": "RoofingContractor",
       "@id": "https://www.arpal-srl.it/#stabilimento",
       "name": "Arpal Srl — Stabilimento",
-      "branchOf": { "@id": "https://www.arpal-srl.it/#organization" },
+      "branchOf": {
+        "@id": "https://www.arpal-srl.it/#organization"
+      },
       "url": "https://www.arpal-srl.it/",
       "image": "https://www.arpal-srl.it/assets/img/og/home.jpg",
       "telephone": "+39 011 1873 8210",
@@ -78,7 +143,46 @@
         "addressLocality": "Poirino",
         "addressRegion": "TO",
         "addressCountry": "IT"
-      }
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Torino"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia di Cuneo"
+        },
+        {
+          "@type": "Place",
+          "name": "Langhe"
+        },
+        {
+          "@type": "Place",
+          "name": "Roero"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Valle d'Aosta"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.arpal-srl.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Richiedi un preventivo",
+          "item": "https://www.arpal-srl.it/preventivo.html"
+        }
+      ]
     }
   ]
 }
@@ -86,7 +190,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=37">
+<link rel="stylesheet" href="assets/css/style.css?v=46">
 <link rel="stylesheet" href="assets/css/preventivo.css?v=2">
 </head>
 <body class="quote">
@@ -111,8 +215,9 @@
         </div>
       </div>
     </div>
-      <a href="index.html#assistenza">Assistenza</a>
+      <a href="archivio-lavori.html">Archivio lavori</a>
       <a href="index.html#materiali">Materiali</a>
+      <a href="index.html#assistenza">Assistenza</a>
       <a href="index.html#contatti">Contatti</a>
     </nav>
     <div class="nav-right">
@@ -138,8 +243,9 @@
       <a href="laghi-artificiali.html">Laghi artificiali</a>
     </div>
   </div>
-  <a href="index.html#assistenza">Assistenza</a>
+  <a href="archivio-lavori.html">Archivio lavori</a>
   <a href="index.html#materiali">Materiali</a>
+  <a href="index.html#assistenza">Assistenza</a>
   <a href="index.html#contatti">Contatti</a>
   <div class="mobile-nav-foot">
     <span>info@arpal-srl.it</span>
@@ -288,8 +394,9 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#storia">Storia</a></li>
           <li><a href="index.html#servizi">Servizi</a></li>
-          <li><a href="index.html#assistenza">Assistenza</a></li>
+          <li><a href="archivio-lavori.html">Archivio lavori</a></li>
           <li><a href="index.html#materiali">Materiali</a></li>
+          <li><a href="index.html#assistenza">Assistenza</a></li>
           <li><a href="index.html#contatti">Contatti</a></li>
         </ul>
       </div>
@@ -334,7 +441,7 @@
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
-<script src="assets/js/main.js?v=17"></script>
+<script src="assets/js/main.js?v=19"></script>
 <script src="assets/js/cookie-consent.js?v=1"></script>
 <script src="assets/js/preventivo.js?v=2"></script>
 </body>

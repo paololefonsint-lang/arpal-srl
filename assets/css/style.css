@@ -202,6 +202,7 @@ body.home .site-header:not(.is-scrolled) .logo-img--white{display:block;}
   gap:2.1rem;
 }
 .nav-desktop a{
+  white-space:nowrap;
   font-size:.86rem;
   font-weight:600;
   letter-spacing:.01em;
@@ -525,7 +526,7 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
   font-weight:700;
 }
 .strip-item h3{font-size:1.28rem;}
-.strip-item p{color:var(--c-ink-soft);font-size:.92rem;}
+.strip-item p{margin-top:.6rem;color:var(--c-ink-soft);font-size:.92rem;}
 .strip-item:hover p,.strip-item.is-touched p{color:rgba(255,255,255,.72);}
 .strip-item:hover .num,.strip-item.is-touched .num{color:var(--c-accent-light);}
 .strip-item .go{
@@ -693,6 +694,19 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 }
 .body-text a:hover,.modal-text a:hover{text-decoration-color:var(--c-accent);}
 .service-cta{margin-top:2rem;}
+.service-zones{
+  margin-top:2.2rem;
+  padding-top:1.4rem;
+  border-top:1px solid var(--c-line);
+  display:flex;flex-direction:column;align-items:flex-start;gap:.55rem;
+}
+.service-zones-label{
+  font-family:var(--font-display);
+  font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--c-accent);
+}
+.service-zones p{font-size:.94rem;color:var(--c-ink-soft);max-width:52ch;}
+.service-zones .gallery-all-link{margin-top:.2rem;align-self:flex-start;}
 .service-gallery-col{display:flex;flex-direction:column;gap:.9rem;}
 .gallery-all-link{
   align-self:flex-end;
@@ -756,6 +770,121 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
   .service-grid{grid-template-columns:minmax(0,1fr);}
   .service-block.is-reverse .service-grid{direction:ltr;}
 }
+
+/* -------------------------------------------------- schede tecniche (guaine, lattoneria) */
+.section--spec{border-top:1px solid var(--c-line);}
+.spec-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;
+  background:var(--c-line);
+  border:1px solid var(--c-line);
+}
+.spec-card{
+  background:var(--c-paper);
+  padding:1.7rem 1.4rem 1.6rem;
+  display:flex;
+  flex-direction:column;
+  scroll-margin-top:110px;
+}
+.spec-tag{
+  font-family:var(--font-display);
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--c-accent);
+}
+.spec-card h3{font-size:1.15rem;margin-top:.8rem;}
+.spec-card p{margin-top:.7rem;font-size:.93rem;color:var(--c-ink-soft);}
+.spec-card p a{color:var(--c-accent);font-weight:600;text-decoration:underline;text-decoration-color:var(--c-accent-soft);text-underline-offset:3px;}
+.spec-link{
+  margin-top:auto;
+  padding-top:1rem;
+  display:inline-flex;align-items:center;gap:.45em;
+  font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--c-ink);
+  transition:color .25s;
+}
+.spec-link:hover{color:var(--c-accent);}
+.spec-note{margin-top:1.8rem;max-width:72ch;color:var(--c-ink-soft);}
+.spec-materials{margin-top:1.6rem;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .8rem;}
+.spec-materials span{font-size:.86rem;font-weight:600;color:var(--c-ink);margin-right:.2rem;}
+.spec-materials a{
+  padding:.55rem 1.1rem;
+  border:1px solid var(--c-line);
+  border-radius:999px;
+  font-size:.84rem;font-weight:600;
+  transition:border-color .3s,color .3s;
+}
+.spec-materials a:hover{border-color:var(--c-accent);color:var(--c-accent);}
+.spec-more{display:inline-flex;margin-top:1.4rem;}
+@media(max-width:1000px){.spec-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.spec-grid{grid-template-columns:minmax(0,1fr);}}
+
+/* -------------------------------------------------- lavori realizzati */
+.projects-filter{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem .8rem;
+  margin-bottom:clamp(32px,4vw,48px);
+}
+.projects-filter button{
+  padding:.65rem 1.25rem;
+  border:1px solid var(--c-line);
+  border-radius:999px;
+  background:transparent;
+  font-size:.86rem;
+  font-weight:600;
+  transition:border-color .3s,color .3s,background .3s;
+}
+.projects-filter button:hover{border-color:var(--c-accent);color:var(--c-accent);}
+.projects-filter button.is-active{background:var(--c-ink);border-color:var(--c-ink);color:#fff;}
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(28px,3.4vw,44px) clamp(18px,2.4vw,32px);
+}
+.project-card{display:flex;flex-direction:column;}
+.project-media{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  aspect-ratio:4/3;
+  border:0;
+  border-radius:var(--radius);
+  padding:0;
+  background:var(--c-paper-alt);
+  cursor:zoom-in;
+}
+.project-media picture{display:block;width:100%;height:100%;}
+.project-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);}
+.project-media:hover img{transform:scale(1.05);}
+.project-count{
+  position:absolute;
+  left:12px;bottom:12px;
+  padding:.3rem .7rem;
+  border-radius:999px;
+  background:rgba(11,19,29,.72);
+  color:#fff;
+  font-size:.74rem;
+  font-weight:600;
+  letter-spacing:.02em;
+}
+.project-body{padding-top:1.1rem;}
+.project-cat{
+  font-family:var(--font-display);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--c-accent);
+}
+.project-body h3{font-size:1.22rem;margin-top:.45rem;}
+.project-place{margin-top:.35rem;font-size:.9rem;font-weight:600;color:var(--c-ink);}
+.project-text{margin-top:.55rem;font-size:.94rem;color:var(--c-ink-soft);}
+@media(max-width:900px){.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.projects-grid{grid-template-columns:minmax(0,1fr);}}
 
 /* lightbox */
 .lightbox{
@@ -975,6 +1104,7 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 .contact-card a:hover{color:var(--c-accent);}
 .contact-card .row{display:flex;justify-content:space-between;gap:1rem;text-align:right;padding:.5rem 0;border-top:1px solid var(--c-line);}
 .contact-card .row:first-of-type{border-top:0;}
+.contact-card .row > :first-child{flex-shrink:0;text-align:left;}
 .contact-map{
   border-radius:4px;
   overflow:hidden;
@@ -1146,7 +1276,9 @@ body.home .site-header:not(.is-scrolled) .nav-toggle span{background:#fff;}
 .cookie-banner a{color:#fff;text-decoration:underline;text-underline-offset:2px;}
 .cookie-banner-actions{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;}
 
-@media(max-width:900px){
+@media(max-width:1240px){.nav-desktop{gap:1.35rem;}}
+.site-header .logo{flex-shrink:0;}
+@media(max-width:1100px){
   .nav-desktop,.nav-right .btn-ghost{display:none;}
   .nav-toggle{display:flex;}
 }
