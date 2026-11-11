@@ -274,6 +274,16 @@ window.ARPAL_GALLERIES_EXTRA = {
   ]
 };
 
+/* Lavori in evidenza in home (titoli esatti da ARPAL_PROJECTS, nell'ordine di visualizzazione) */
+window.ARPAL_HOME_PROJECTS = [
+  "Parete ventilata in alluminio aggraffato",
+  "Involucro continuo in alluminio bronzato",
+  "Facciata in HPL effetto Corten",
+  "Copertura in rame con falde su misura",
+  "Guaina bituminosa ceramizzata",
+  "Terrazzo con correzione delle pendenze"
+];
+
 /* Archivio lavori: cat = impermeabilizzazioni | coperture | facciate */
 window.ARPAL_PROJECT_CATEGORIES = {
   coperture:"Coperture e lattoneria",
@@ -328,12 +338,12 @@ window.ARPAL_PROJECTS = [
     ]
   },
   {
-    cat:"coperture", title:"Abbaini rivestiti in zinco-titanio quartz", place:"",
+    cat:"coperture", title:"Abbaini rivestiti in zinco-titanio quartz", place:"Vergne (CN)",
     text:"Rivestimento di abbaini in zinco-titanio quartz, con sistema a doppia aggraffatura.",
     photos:[
-      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-1.jpg", alt:"Abbaini rivestiti in zinco-titanio quartz a doppia aggraffatura"},
-      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-2.jpg", alt:"Abbaino in zinco-titanio quartz, dettaglio della lattoneria"},
-      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-3.jpg", alt:"Abbaini in zinco-titanio quartz su copertura"}
+      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-1.jpg", alt:"Abbaini rivestiti in zinco-titanio quartz a doppia aggraffatura a Vergne"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-2.jpg", alt:"Abbaino in zinco-titanio quartz a Vergne, dettaglio della lattoneria"},
+      {src:"assets/img/rivestimenti-metallici/rivestimento-zinco-quartz-3.jpg", alt:"Abbaini in zinco-titanio quartz su copertura a Vergne"}
     ]
   },
   {
@@ -526,12 +536,12 @@ window.ARPAL_PROJECTS = [
     ]
   },
   {
-    cat:"impermeabilizzazioni", title:"Impermeabilizzazione di copertura con guaina bituminosa", place:"",
+    cat:"impermeabilizzazioni", title:"Impermeabilizzazione di copertura con guaina bituminosa", place:"Grugliasco (TO)",
     text:"Rivestimento di copertura piana con guaina bituminosa.",
     photos:[
-      {src:"assets/img/impermeabilizzazioni/copertura-1.jpg", alt:"Copertura piana impermeabilizzata con guaina bituminosa al tramonto"},
-      {src:"assets/img/impermeabilizzazioni/copertura-2.jpg", alt:"Copertura piana in guaina bituminosa, vista d'insieme"},
-      {src:"assets/img/impermeabilizzazioni/copertura-3.jpg", alt:"Copertura piana in guaina bituminosa, vista verso le montagne"}
+      {src:"assets/img/impermeabilizzazioni/copertura-1.jpg", alt:"Copertura piana impermeabilizzata con guaina bituminosa a Grugliasco, al tramonto"},
+      {src:"assets/img/impermeabilizzazioni/copertura-2.jpg", alt:"Copertura piana in guaina bituminosa a Grugliasco, vista d'insieme"},
+      {src:"assets/img/impermeabilizzazioni/copertura-3.jpg", alt:"Copertura piana in guaina bituminosa a Grugliasco, vista verso le montagne"}
     ]
   },
   {
