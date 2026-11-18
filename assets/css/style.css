@@ -1108,6 +1108,8 @@ a.project-media{cursor:pointer;}
 .contact-card .row{display:flex;justify-content:space-between;gap:1rem;text-align:right;padding:.5rem 0;border-top:1px solid var(--c-line);}
 .contact-card .row:first-of-type{border-top:0;}
 .contact-card .row > :first-child{flex-shrink:0;text-align:left;}
+.contact-card--review p{margin-bottom:1.1rem;}
+.contact-card .btn-dark,.contact-card .btn-dark:hover{color:#fff;}
 .contact-map{
   border-radius:4px;
   overflow:hidden;
